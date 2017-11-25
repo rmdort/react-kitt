@@ -3,15 +3,29 @@ $default-spacing: 2rem !default;
 $base-font-size: 1rem !default;
 $default-border-radius: 3px !default;
 
+/* Color */
+$primary-color: #007bff !default;
+$secondary-color: #868e96 !default;
+$success-color: #28a745 !default;
+$danger-color: #dc3545 !default;
+$warning-color: #ffc107 !default;
+$info-color: #17a2b8 !default;
+$light-color: #f8f9fa !default;
+$dark-color: #343a40 !default;
+
+/* Links */
+$link-color: $primary-color !default;
+
 /* Button */
-$button-height: 2.5rem;
-$button-vertical-align: -0.4375rem;
+$button-height: 2.5rem !default;
+$button-vertical-align: -0.4375rem !default;
 $button-background-color: #ebf1f5 !default;
 $button-padding: 0.5rem 1rem !default;
 $button-spacing: 0.15rem !default;
 $button-border-width: 1px !default;
 $button-border-color: #666 !default;
 $button-border-style: solid !default;
+$button-font-color: white !default;
 
 /* Button group */
 $button-group-spacing: $default-spacing !default;
@@ -36,18 +50,18 @@ $card-footer-border-width: 1px !default;
 $card-title-border-width: 1px !default;
 
 /* Tooltip */
-$hintPrefix: 'o-tooltip--';
-$hintFontSize: 14px;
+$hintPrefix: 'o-tooltip--' !default;
+$hintFontSize: 14px !default;
 
 /* Alert */
-$alert-info-background: rgba(0, 144, 224, 0.1);
+$alert-info-background: rgba(0, 144, 224, 0.1) !default;
 
 /* Pill */
-$pill-height: 40px;
-$pill-background: #eee;
-$pill-padding-left: 1rem;
-$pill-padding-right: 1rem;
-$pill-border-radius: 20px;
+$pill-height: 40px !default;
+$pill-background: #eee !default;
+$pill-padding-left: 1rem !default;
+$pill-padding-right: 1rem !default;
+$pill-border-radius: 20px !default;
 
 /* Elevation */
 $elevation-0: 0 0 0 1px rgba(16, 22, 26, 0.15),

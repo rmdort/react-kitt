@@ -1,7 +1,13 @@
 Button example
 
 ```js
-<Button label='Button' />
+<Button label='Default button' />
+```
+
+```js
+<div>
+  <Button primary label='Primary' /> <Button secondary label='Secondary' />
+</div>
 ```
 
 Button with icon on the right

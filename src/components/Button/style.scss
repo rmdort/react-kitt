@@ -12,3 +12,15 @@
     vertical-align: $button-vertical-align;
   }
 }
+
+/* Primary */
+.o-button-primary {
+  background: $primary-color;
+  color: $button-font-color;
+}
+
+/* Secondary */
+.o-button-secondary {
+  background: $secondary-color;
+  color: $button-font-color;
+}

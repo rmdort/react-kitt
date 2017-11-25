@@ -1,0 +1,12 @@
+Example
+
+```js
+<Pagination
+  perPage={10}
+  currentPage={2}
+  totalResults={200}
+  onChangePage={(newPage) => {
+    console.log(newPage)
+  }}
+/>
+```
