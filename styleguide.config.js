@@ -5,6 +5,7 @@ module.exports = {
   showUsage: true,
   // skipComponentsWithoutExample: true,
   title: `React Kitt - ${version}`,
+  styleguideDir: 'docs',
   require: [
     path.resolve(__dirname, './setup.js'),
     path.join(__dirname, './src/styles/main.scss'),
