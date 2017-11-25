@@ -8,6 +8,10 @@ import './style.scss'
 
 const Alert = ({ title, isOpen, children, onClose, hide, animation, animationTimeout, className, type }) => {
   let classes = cx(alertClassName, `${alertClassName}-${type}`, className)
+  function handleClose () {
+    onClose && onClose()
+    hide()
+  }
   return (
     <CSSTransition in={isOpen} unmountOnExit classNames={animation || ''} timeout={animationTimeout}>
       <div className={classes}>
@@ -16,10 +20,10 @@ const Alert = ({ title, isOpen, children, onClose, hide, animation, animationTim
           : null
         }
         {typeof children === 'function'
-          ? children({ hide })
+          ? children({ hide: handleClose })
           : children
         }
-        <button onClick={hide}>Hide</button>
+        <button onClick={handleClose}>Hide</button>
       </div>
     </CSSTransition>
   )
