@@ -6,7 +6,7 @@ import onClickOutside from 'react-onclickoutside'
 import { ddClassName, ddActiveClassName, ddContentClassName, ddTriggerClassName, ddTriggerActiveClassName, ddRightClassName } from './../../settings'
 import { CSSTransition } from 'react-transition-group'
 import './style.scss'
-import KeyDownHandler from './../../decorators/keydown'
+import { keyDownHandler } from './../../decorators/keydown'
 
 const Dropdown = ({ isOpen, children, animation, animationTimeout, toggle, hide, label, hAlign, keyCode }) => {
   const parentClassName = cx(ddClassName, {
@@ -76,7 +76,7 @@ const DropdownWithState = withStateHandlers(
     toggle: ({ isOpen }) => (event) => ({ isOpen: !isOpen }),
     hide: ({ isOpen }) => () => ({ isOpen: false })
   }
-)(KeyDownHandler({ keyCode: 27 })(Dropdown))
+)(keyDownHandler({ keyCode: 27 })(Dropdown))
 
 export { DropdownWithState as Dropdown }
 export default DropdownWithState
