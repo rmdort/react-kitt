@@ -1,0 +1,23 @@
+@import './../../styles/variables';
+
+/* Dropdown */
+.o-dd {
+  position: relative;
+  display: inline-block;
+}
+
+/* Content */
+.o-dd-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+/* Align right */
+.o-dd--right {
+  .o-dd-content {
+    right: 0;
+    left: auto;
+  }
+}

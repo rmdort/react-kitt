@@ -1,0 +1,26 @@
+@import './../../styles/variables';
+
+.o-tab-labels {
+  display: flex;
+}
+
+/* Label */
+
+.o-tab-label {
+  padding: 0.5em 1em;
+  border: none;
+  background: none;
+  border-radius: 0;
+  border-bottom: 2px transparent solid;
+  cursor: pointer;
+}
+
+/* Active tab */
+.o-tab-label-active {
+  border-bottom: 2px green solid;
+}
+
+/* Body of the tab */
+.o-tab-panel-inner {
+  padding: 1em;
+}

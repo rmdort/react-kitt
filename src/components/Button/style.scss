@@ -1,0 +1,14 @@
+@import './../../styles/variables';
+
+.o-button {
+  background-color: $button-background-color;
+  padding: $button-padding;
+  border: $button-border-width $button-border-color $button-border-style;
+  cursor: pointer;
+  height: $button-height;
+
+  /* Icons inside button */
+  .material-icons {
+    vertical-align: $button-vertical-align;
+  }
+}

@@ -1,0 +1,26 @@
+@import './../../styles/variables';
+
+/* Card styles */
+.o-card {
+  border: $card-border-width $card-border-color $card-border-style;
+  border-radius: $default-border-radius;
+  margin-bottom: $card-margin-bottom;
+  background: $card-background;
+}
+
+/* Body */
+.o-card-body {
+  padding: $card-body-padding;
+}
+
+/* Title */
+.o-card-title {
+  padding: $card-title-padding;
+  border-bottom: $card-title-border-width $card-border-color solid;
+}
+
+/* Footer */
+.o-card-footer {
+  padding: $card-footer-padding;
+  border-top: $card-footer-border-width $card-border-color solid;
+}

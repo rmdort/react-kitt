@@ -1,0 +1,32 @@
+@import './../../styles/variables';
+
+/* Button */
+.o-pill-button, .o-pill-close {
+  border: none;
+  background: $pill-background;
+  height: $pill-height;
+  border-radius: $pill-border-radius;
+  padding-left: $pill-padding-left;
+  padding-right: $pill-padding-right;
+  cursor: pointer;
+}
+
+/* Close */
+.o-pill-close {
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 1px;
+}
+
+.o-pill {
+  button:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  button:last-child {
+    border-top-right-radius: $pill-border-radius;
+    border-bottom-right-radius: $pill-border-radius;
+  }
+}

@@ -1,0 +1,12 @@
+@import './../../styles/variables';
+
+/* Alert */
+.o-alert {
+  background: $alert-info-background;
+  padding: 1em;
+}
+
+/* Title */
+.o-alert-title {
+  font-weight: bold;
+}

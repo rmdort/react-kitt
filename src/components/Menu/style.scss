@@ -1,0 +1,13 @@
+@import './../../styles/variables';
+
+/* Menu */
+.o-menu {
+  background: white;
+  box-shadow: $elevation-2;
+  border-radius: $default-border-radius;
+
+  > a {
+    display: block;
+    padding: 0.5em 1em;
+  }
+}

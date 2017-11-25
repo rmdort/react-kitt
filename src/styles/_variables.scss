@@ -1,0 +1,67 @@
+/* Base */
+$default-spacing: 2rem !default;
+$base-font-size: 1rem !default;
+$default-border-radius: 3px !default;
+
+/* Button */
+$button-height: 2.5rem;
+$button-vertical-align: -0.4375rem;
+$button-background-color: #ebf1f5 !default;
+$button-padding: 0.5rem 1rem !default;
+$button-spacing: 0.15rem !default;
+$button-border-width: 1px !default;
+$button-border-color: #666 !default;
+$button-border-style: solid !default;
+
+/* Button group */
+$button-group-spacing: $default-spacing !default;
+
+/* Card */
+$card-border-width: 0px !default;
+$card-border-color: #ddd !default;
+$card-border-style: solid !default;
+$card-border-radius: $default-border-radius !default;
+$card-margin-bottom: $default-spacing !default;
+
+/* Card body */
+$card-background: white;
+$card-body-padding: 1.5rem 1rem !default;
+$card-title-padding: 0.5rem 1rem !default;
+$card-footer-padding: 0.5rem 1rem !default;
+
+/* Card footer */
+$card-footer-border-width: 1px !default;
+
+/* Card title */
+$card-title-border-width: 1px !default;
+
+/* Tooltip */
+$hintPrefix: 'o-tooltip--';
+$hintFontSize: 14px;
+
+/* Alert */
+$alert-info-background: rgba(0, 144, 224, 0.1);
+
+/* Pill */
+$pill-height: 40px;
+$pill-background: #eee;
+$pill-padding-left: 1rem;
+$pill-padding-right: 1rem;
+$pill-border-radius: 20px;
+
+/* Elevation */
+$elevation-0: 0 0 0 1px rgba(16, 22, 26, 0.15),
+0 0 0 rgba(16, 22, 26, 0),
+0 0 0 rgba(16, 22, 26, 0) !default;
+$elevation-1: 0 0 0 1px rgba(16, 22, 26, 0.1),
+0 0 0 rgba(16, 22, 26, 0),
+0 1px 1px rgba(16, 22, 26, 0.2) !default;
+$elevation-2: 0 0 0 1px rgba(16, 22, 26, 0.1),
+0 1px 1px rgba(16, 22, 26, 0.2),
+0 2px 6px rgba(16, 22, 26, 0.2) !default;
+$elevation-3: 0 0 0 1px rgba(16, 22, 26, 0.1),
+0 2px 4px rgba(16, 22, 26, 0.2),
+0 8px 24px rgba(16, 22, 26, 0.2) !default;
+$elevation-4: 0 0 0 1px rgba(16, 22, 26, 0.1),
+0 4px 8px rgba(16, 22, 26, 0.2),
+0 18px 46px 6px rgba(16, 22, 26, 0.2) !default;
