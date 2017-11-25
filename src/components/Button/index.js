@@ -13,7 +13,7 @@ const Button = (props) => {
   const classes = cx(buttonClassName, {
     [`${buttonClassName}-primary`]: primary,
     [`${buttonClassName}-secondary`]: secondary
-  },className)
+  }, className)
 
   return (
     <button
