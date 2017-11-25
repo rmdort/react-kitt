@@ -43,3 +43,6 @@ export const alertTitleClassName = 'o-alert-title'
 export const pillClassName = 'o-pill'
 export const pillButtonClassName = 'o-pill-button'
 export const pillCloseClassName = 'o-pill-close'
+
+/* Tooltip */
+export const tooltipClassName = 'o-tooltip'

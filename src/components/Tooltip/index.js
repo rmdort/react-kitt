@@ -1,6 +1,8 @@
 import React from 'react'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
+import { tooltipClassName } from './../../settings'
+import './style.scss'
 
 /**
  * Render tooltips using `hint.css`
@@ -8,9 +10,9 @@ import PropTypes from 'prop-types'
  * https://github.com/chinchang/hint.css/
  */
 const ToolTip = ({ className, children, label, position, type }) => {
-  const classes = cx(`o-tooltip--${position}`, `o-tooltip--${type}`, className)
+  const classes = cx(tooltipClassName, `${tooltipClassName}--${position}`, `${tooltipClassName}--${type}`, className)
   return (
-    <span className={classes} aria-label={label}>{children}</span>
+    <button role='tooltip' type='button' className={classes} aria-label={label}>{children}</button>
   )
 }
 
