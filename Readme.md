@@ -1,11 +1,11 @@
 # React kitt
 
-Super lightweight React User Inteface components to help you get started.
+Super lightweight React User Inteface components to help you get started. 
 
 ## How to use
 
 ````
-yarn install react-kitt
+yarn add react-kitt
 ````
 
 ````
