@@ -1,3 +1,6 @@
+@import './../../styles/mixins';
+@import './../../styles/variables';
+
 /* Modal */
 .o-modal {
   display: flex;
@@ -31,4 +34,73 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+
+/* React modal over-rides */
+.o-modal-overlay {
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Modal container */
+.o-modal-container {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background: white;
+  box-shadow: $elevation-4;
+  overflow: auto;
+  border-radius: $default-border-radius;
+  outline: none;
+}
+
+/* Small modal */
+.o-modal-container-small {
+  /* tablet */
+  @include media (tablet) {
+    width: 400px;
+    bottom: auto;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);  
+  }
+}
+
+/* Fullscreen modal */
+.o-modal-container-fullscreen {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Confirm modal */
+.o-modal-container-confirm {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include media (tablet) {
+    width: 400px;
+    bottom: auto;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  /* Hide close */
+  .o-modal-close {
+    display: none;
+  }
 }

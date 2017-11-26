@@ -60,7 +60,8 @@ export const modalTitleClassName = 'o-modal-title'
 export const modalBodyClassName = 'o-modal-body'
 export const modalFooterClassName = 'o-modal-footer'
 export const modalCloseClassName = 'o-modal-close'
-export const overlayBackground = 'rgba(0,0,0,0.5)'
+export const modalOverlayClassName = 'o-modal-overlay'
+export const modalContainerClassName = 'o-modal-container'
 
 /* Toggle */
 export const toggleClassName = 'o-toggle'

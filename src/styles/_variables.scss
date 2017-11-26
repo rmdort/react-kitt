@@ -6,6 +6,7 @@ $default-border-radius: 3px !default;
 /* Base colors */
 $base-color: #444;
 $default-border-color: #ddd !default;
+$base-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25) !default;
 
 /* Color */
 $primary-color: #007bff !default;
@@ -24,9 +25,10 @@ $link-color: $primary-color !default;
 $button-height: 2.5rem !default;
 $button-height-small: 2.125rem !default;
 $button-height-large: 3rem !default;
-$button-font-size: 1rem;
-$button-font-size-small: 0.9rem;
-$button-font-size-large: 1.2rem;
+$button-font-size: 1rem !default;
+$button-font-size-small: 0.9rem !default;
+$button-font-size-large: 1.2rem !default;
+$button-font-color-default: #666 !default;
 $button-vertical-align: -0.4375rem !default;
 $button-background-color: #ebf1f5 !default;
 $button-padding: 0.5rem 1rem !default;
@@ -35,13 +37,17 @@ $button-border-width: 1px !default;
 $button-border-color: #666 !default;
 $button-border-style: solid !default;
 $button-font-color: white !default;
-$button-border-radius: $default-border-radius;
+$button-border-radius: $default-border-radius !default;
+$button-box-shadow: $base-box-shadow !default;
 
 $button-primary-color: $primary-color !default;
-$button-primary-border-color: darken($primary-color, 20%) !default;
+$button-primary-border-color: $primary-color !default;
 
 $button-secondary-color: $secondary-color !default;
-$button-secondary-border-color: darken($secondary-color, 20%) !default;
+$button-secondary-border-color: $secondary-color !default;
+
+$button-success-color: $success-color !default;
+$button-success-border-color: $success-color !default;
 
 /* Button group */
 $button-group-spacing: $default-spacing !default;
@@ -84,6 +90,18 @@ $menu-item-padding: 0.8rem 1rem;
 $menu-item-hover-background: $primary-color;
 $menu-item-hover-color: white;
 $menu-header-color: #666;
+
+/* Breakpoints
+   0 - 480 (mobile), 480+ (medium), 600+ (tablet), 960+ (desktop), 1300+ (wide)
+ */
+$screen: 'only screen';
+$desktop-width: 980px !default;
+$breakpoints: (
+  mobile: '#{$screen} and (max-width: 480px)',
+  tablet: '#{$screen} and (min-width: 768px)',
+  desktop: '#{$screen} and (min-width: #{$desktop-width})',
+  wide: '#{$screen} and (min-width: 1100px)'
+);
 
 /* Elevation */
 $elevation-0: 0 0 0 1px rgba(16, 22, 26, 0.15),

@@ -1,75 +1,43 @@
 import React from 'react'
+import cx from 'classnames'
 import PropTypes from 'prop-types'
 import ModalWindow from 'react-modal'
-import { modalClassName, modalTitleClassName, modalBodyClassName, modalFooterClassName, modalCloseClassName, overlayBackground } from './../../settings'
+import { modalClassName, modalTitleClassName, modalBodyClassName, modalFooterClassName, modalCloseClassName, modalOverlayClassName, modalContainerClassName } from './../../settings'
 import './style.scss'
 
-const overlayStyle = {
-  overlay: {
-    backgroundColor: overlayBackground
-  }
-}
-
-const modalStyles = {
-  small: {
-    content: {
-      width: 600,
-      left: '50%',
-      marginLeft: -300,
-      right: '50%',
-      marginRight: -300,
-      bottom: 'auto',
-      border: 'none',
-      padding: 0,
-      boxShadow: '0 2px 6px 2px rgba(0,0,0,0.4)'
-    }
-  },
-  medium: {
-    content: {
-      left: '1rem',
-      bottom: '1rem',
-      top: '1rem',
-      right: '1rem',
-      border: 'none',
-      padding: 0,
-      boxShadow: '0 2px 6px 2px rgba(0,0,0,0.4)'
-    }
-  },
-  large: {
-    content: {
-      left: '1rem',
-      bottom: '1rem',
-      top: '1rem',
-      right: '1rem',
-      border: 'none',
-      padding: 0,
-      boxShadow: '0 2px 6px 2px rgba(0,0,0,0.4)'
-    }
-  }
-}
-
-const Modal = ({ isOpen, onRequestClose, style, title, children, footer, type }) => {
+const Modal = ({ isOpen, onRequestClose, style, title, children, footer, type, fullScreen, ...rest }) => {
+  let classes = cx(modalContainerClassName, {
+    [`${modalContainerClassName}-${type}`]: type,
+    [`${modalContainerClassName}-fullscreen`]: fullScreen
+  })
   return (
     <ModalWindow
       isOpen={isOpen}
       onRequestClose={onRequestClose}
-      style={{
-        ...overlayStyle,
-        ...modalStyles[type],
-        ...style
-      }}
+      overlayClassName={modalOverlayClassName}
+      className={classes}
+      {...rest}
     >
       <button className={modalCloseClassName} onClick={onRequestClose}>Close</button>
       <div className={modalClassName}>
-        <div className={modalTitleClassName}>
-          {title}
-        </div>
+        {title
+          ? <div className={modalTitleClassName}>
+              {title}
+            </div>
+          : null
+        }
         <div className={modalBodyClassName}>
-          {children}
+          {typeof children === 'function'
+            ? children({ onRequestClose })
+            : children
+          }
         </div>
-        <div className={modalFooterClassName}>
-          {footer}
-        </div>
+        {footer
+          ? <div className={modalFooterClassName}>
+              {footer}
+            </div>
+          : null
+        }
       </div>
     </ModalWindow>
   )
@@ -79,12 +47,17 @@ Modal.defaultProps = {
   title: null,
   children: null,
   footer: null,
-  type: 'small',
-  bodyHeight: 400
+  type: 'large',
+  fullScreen: false,
+  shouldCloseOnEsc: true,
+  shouldCloseOnOverlayClick: true,
 }
 
 Modal.propTypes = {
-  type: PropTypes.oneOf(['small', 'medium', 'large'])
+  type: PropTypes.oneOf([null, 'small', 'medium', 'large', 'confirm']),
+  fullScreen: PropTypes.bool,
+  shouldCloseOnEsc: PropTypes.bool,
+  shouldCloseOnOverlayClick: PropTypes.bool,
 }
 
 export default Modal
