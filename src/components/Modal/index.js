@@ -80,7 +80,7 @@ Modal.defaultProps = {
   children: null,
   footer: null,
   type: 'small',
-  bodyHeight: 400,
+  bodyHeight: 400
 }
 
 Modal.propTypes = {

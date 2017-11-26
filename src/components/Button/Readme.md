@@ -1,12 +1,14 @@
-Button example
+Button sizes
 
 ```js
-<Button label='Default button' />
+<div>
+  <Button type='small' label='Small' /> <Button type='normal' label='Normal' /> <Button type='large' label='Large' />
+</div>
 ```
 
 ```js
 <div>
-  <Button primary label='Primary' /> <Button secondary label='Secondary' />
+  <Button primary label='Primary' /> <Button secondary label='Secondary' /> <Button secondary label='Secondary' href='http://www.google.com' />
 </div>
 ```
 

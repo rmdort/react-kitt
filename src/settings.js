@@ -37,6 +37,10 @@ export const ddRightClassName = 'o-dd--right'
 
 /* Menu */
 export const menuClassName = 'o-menu'
+export const menuDividerClassName = 'o-menu-divider'
+export const menuItemClassName = 'o-menu-item'
+export const menuItemInteractiveClassName = 'o-menu__interactive'
+export const menuHeaderClassName = 'o-menu-header'
 
 /* Alert */
 export const alertClassName = 'o-alert'

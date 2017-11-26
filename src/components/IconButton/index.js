@@ -9,20 +9,23 @@ import { iconButtonClassName } from './../../settings'
  * Buttons trigger actions when clicked
  */
 const IconButton = (props) => {
-  let { name, className, primary, secondary, ...rest } = props
+  let { name, href, className, primary, secondary, ...rest } = props
   /* Add className */
   const classes = cx(iconButtonClassName, {
     [`${iconButtonClassName}-primary`]: primary,
     [`${iconButtonClassName}-secondary`]: secondary
   }, className)
 
+  const tagName = href
+    ? 'a'
+    : 'button'
+
   return (
-    <button
-      className={classes}
-      {...rest}
-    >
-      <Icon name={name} />
-    </button>
+    React.createElement(tagName, {
+      className: classes,
+      href: href,
+      ...rest
+    }, React.createElement(Icon, { name }))
   )
 }
 

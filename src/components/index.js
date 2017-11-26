@@ -1,3 +1,6 @@
 export * from './Button'
 export * from './Dropdown'
 export * from './Alert'
+export { default as MenuDivider } from './Menu/MenuDivider'
+export { default as MenuItem } from './Menu/MenuItem'
+export { default as MenuHeader } from './Menu/MenuHeader'

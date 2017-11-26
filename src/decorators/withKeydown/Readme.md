@@ -11,5 +11,5 @@ const MyComponent = ({
   </div>
 )
 
-export default withKeydown({ keyCode: 27 })(MyComponent)
+export default withKeydown()(MyComponent)
 ```

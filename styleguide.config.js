@@ -23,7 +23,7 @@ module.exports = {
   sections: [
     {
       name: 'Components',
-      components: 'src/components/**/*.js'
+      components: 'src/components/**/index.js'
     },
     {
       name: 'HOC',

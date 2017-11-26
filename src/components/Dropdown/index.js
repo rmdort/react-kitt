@@ -34,7 +34,6 @@ const Dropdown = ({ isOpen, children, animation, animationTimeout, toggle, hide,
         <div
           aria-hidden={!isOpen}
           className={ddContentClassName}
-          tabIndex={0}
         >
           {typeof children === 'function'
             ? children({ hide })
@@ -75,8 +74,8 @@ const DropdownCompose = compose(
       hide()
     }
   }),
-  withKeydown({ keyCode: 27 }),
-  onClickOutside,
+  withKeydown(),
+  onClickOutside
 )(Dropdown)
 
 export default DropdownCompose

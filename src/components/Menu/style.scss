@@ -4,10 +4,47 @@
 .o-menu {
   background: white;
   box-shadow: $elevation-2;
-  border-radius: $default-border-radius;
+  max-width: 400px;
+  min-width: 240px;
+}
 
-  > a {
-    display: block;
-    padding: 0.5em 1em;
+/* Divider */
+.o-menu-divider {
+  border-bottom: 1px $default-border-color solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Item */
+.o-menu-item {
+  display: block;
+  border: none;
+  background: none;
+  padding: $menu-item-padding;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 0;
+  color: $base-color;
+}
+
+/* Interactive menu */
+.o-menu__interactive {
+  cursor: pointer;
+  &:hover, &-active {
+    background: $menu-item-hover-background;
+    color: $menu-item-hover-color;
+  }
+}
+
+/* Menu header */
+.o-menu-header {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: $menu-header-color;
+  font-weight: 100;
+
+  &:first-of-type {
+    margin-top: 0;
   }
 }

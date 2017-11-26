@@ -3,6 +3,10 @@ $default-spacing: 2rem !default;
 $base-font-size: 1rem !default;
 $default-border-radius: 3px !default;
 
+/* Base colors */
+$base-color: #444;
+$default-border-color: #ddd !default;
+
 /* Color */
 $primary-color: #007bff !default;
 $secondary-color: #868e96 !default;
@@ -18,6 +22,11 @@ $link-color: $primary-color !default;
 
 /* Button */
 $button-height: 2.5rem !default;
+$button-height-small: 2.125rem !default;
+$button-height-large: 3rem !default;
+$button-font-size: 1rem;
+$button-font-size-small: 0.9rem;
+$button-font-size-large: 1.2rem;
 $button-vertical-align: -0.4375rem !default;
 $button-background-color: #ebf1f5 !default;
 $button-padding: 0.5rem 1rem !default;
@@ -26,6 +35,7 @@ $button-border-width: 1px !default;
 $button-border-color: #666 !default;
 $button-border-style: solid !default;
 $button-font-color: white !default;
+$button-border-radius: $default-border-radius;
 
 $button-primary-color: $primary-color !default;
 $button-primary-border-color: darken($primary-color, 20%) !default;
@@ -68,6 +78,12 @@ $pill-background: #eee !default;
 $pill-padding-left: 1rem !default;
 $pill-padding-right: 1rem !default;
 $pill-border-radius: 20px !default;
+
+/* Menu */
+$menu-item-padding: 0.8rem 1rem;
+$menu-item-hover-background: $primary-color;
+$menu-item-hover-color: white;
+$menu-header-color: #666;
 
 /* Elevation */
 $elevation-0: 0 0 0 1px rgba(16, 22, 26, 0.15),

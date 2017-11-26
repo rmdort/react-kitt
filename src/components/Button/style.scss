@@ -5,7 +5,13 @@
   padding: $button-padding;
   border: $button-border-width $button-border-color $button-border-style;
   cursor: pointer;
+  border-radius: $button-border-radius;
   height: $button-height;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $button-font-size;
+  line-height: normal;
 
   /* Icons inside button */
   .material-icons {
@@ -25,4 +31,16 @@
   background: $button-secondary-color;
   color: $button-font-color;
   border-color: $button-secondary-border-color;
+}
+
+/* Small */
+.o-button-small {
+  height: $button-height-small;
+  font-size: $button-font-size-small;
+}
+
+/* Small */
+.o-button-large {
+  height: $button-height-large;
+  font-size: $button-font-size-large;
 }

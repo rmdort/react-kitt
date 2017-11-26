@@ -8,20 +8,23 @@ import { buttonClassName } from './../../settings'
  * Buttons trigger actions when clicked
  */
 const Button = (props) => {
-  let { label, children, className, primary, secondary, ...rest } = props
+  let { label, href, type, children, className, primary, secondary, ...rest } = props
   /* Add className */
   const classes = cx(buttonClassName, {
     [`${buttonClassName}-primary`]: primary,
     [`${buttonClassName}-secondary`]: secondary
-  }, className)
+  }, `${buttonClassName}-${type}`, className)
+
+  const tagName = href
+    ? 'a'
+    : 'button'
 
   return (
-    <button
-      className={classes}
-      {...rest}
-    >
-      {children || label}
-    </button>
+    React.createElement(tagName, {
+      className: classes,
+      href: href,
+      ...rest
+    }, children || label)
   )
 }
 
@@ -32,12 +35,14 @@ Button.propTypes = {
   label: PropTypes.string,
   primary: PropTypes.bool,
   secondary: PropTypes.bool,
-  children: PropTypes.any
+  children: PropTypes.any,
+  type: PropTypes.oneOf(['small', 'normal', 'large'])
 }
 
 Button.defaultProps = {
   primary: false,
-  secondary: false
+  secondary: false,
+  type: 'normal'
 }
 
 export { Button }

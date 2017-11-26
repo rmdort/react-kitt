@@ -1,11 +1,11 @@
 Dropdown example
 
 ```js
+const { MenuDivider, MenuItem } = require('./../');
 <Dropdown label='Click to open dropdown'>
   <Menu>
-    <a href='#'>Menu item 1</a>
-    <a href='#'>Menu item 2</a>
-    <a href='#'>Menu item 3</a>
+    <MenuItem label='Menu item with href' href='http://www.google.com' />
+    <MenuItem onClick={() => {}} label='Menu item 2' />
   </Menu>
 </Dropdown>
 ```
