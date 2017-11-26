@@ -6,13 +6,13 @@
   box-shadow: $elevation-2;
   max-width: 400px;
   min-width: 240px;
+  padding: 0.5rem 0;
 }
 
 /* Divider */
 .o-menu-divider {
   border-bottom: 1px $default-border-color solid;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0.5rem 1rem;
 }
 
 /* Item */

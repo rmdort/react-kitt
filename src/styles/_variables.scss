@@ -21,6 +21,9 @@ $dark-color: #343a40 !default;
 /* Links */
 $link-color: $primary-color !default;
 
+/* Icon */
+$icon-vertical-align: -0.4375rem !default;
+
 /* Button */
 $button-height: 2.5rem !default;
 $button-height-small: 2.125rem !default;
@@ -29,7 +32,7 @@ $button-font-size: 1rem !default;
 $button-font-size-small: 0.9rem !default;
 $button-font-size-large: 1.2rem !default;
 $button-font-color-default: #666 !default;
-$button-vertical-align: -0.4375rem !default;
+$button-vertical-align: $icon-vertical-align;
 $button-background-color: #ebf1f5 !default;
 $button-padding: 0.5rem 1rem !default;
 $button-spacing: 0.15rem !default;
@@ -86,7 +89,7 @@ $pill-padding-right: 1rem !default;
 $pill-border-radius: 20px !default;
 
 /* Menu */
-$menu-item-padding: 0.8rem 1rem;
+$menu-item-padding: 0.6rem 1rem;
 $menu-item-hover-background: $primary-color;
 $menu-item-hover-color: white;
 $menu-header-color: #666;

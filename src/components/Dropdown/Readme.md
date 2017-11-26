@@ -4,8 +4,11 @@ Dropdown example
 const { MenuDivider, MenuItem } = require('./../');
 <Dropdown label='Click to open dropdown'>
   <Menu>
+    <MenuItem label='Menu item' />
     <MenuItem label='Menu item with href' href='http://www.google.com' />
     <MenuItem onClick={() => {}} label='Menu item 2' />
+    <MenuDivider />
+    <MenuItem onClick={() => {}}><Icon name='lock' /> Logout</MenuItem>
   </Menu>
 </Dropdown>
 ```
