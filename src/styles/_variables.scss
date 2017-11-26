@@ -27,6 +27,12 @@ $button-border-color: #666 !default;
 $button-border-style: solid !default;
 $button-font-color: white !default;
 
+$button-primary-color: $primary-color !default;
+$button-primary-border-color: darken($primary-color, 20%) !default;
+
+$button-secondary-color: $secondary-color !default;
+$button-secondary-border-color: darken($secondary-color, 20%) !default;
+
 /* Button group */
 $button-group-spacing: $default-spacing !default;
 

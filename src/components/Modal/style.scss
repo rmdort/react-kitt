@@ -1,0 +1,34 @@
+/* Modal */
+.o-modal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Title */
+.o-modal-title {
+  border-bottom: 1px #ccc solid;
+  padding: 1rem;
+}
+
+.o-modal-body {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+/* Footer */
+.o-modal-footer {
+  padding: 1rem;
+  border-top: 1px #ccc solid;
+}
+
+/* Close */
+.o-modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

@@ -46,3 +46,11 @@ export const pillCloseClassName = 'o-pill-close'
 
 /* Tooltip */
 export const tooltipClassName = 'o-tooltip'
+
+/* Modal */
+export const modalClassName = 'o-modal'
+export const modalTitleClassName = 'o-modal-title'
+export const modalBodyClassName = 'o-modal-body'
+export const modalFooterClassName = 'o-modal-footer'
+export const modalCloseClassName = 'o-modal-close'
+export const overlayBackground = 'rgba(0,0,0,0.5)'

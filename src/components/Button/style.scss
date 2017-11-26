@@ -15,12 +15,14 @@
 
 /* Primary */
 .o-button-primary {
-  background: $primary-color;
+  background: $button-primary-color;
   color: $button-font-color;
+  border-color: $button-primary-border-color;
 }
 
 /* Secondary */
 .o-button-secondary {
-  background: $secondary-color;
+  background: $button-secondary-color;
   color: $button-font-color;
+  border-color: $button-secondary-border-color;
 }

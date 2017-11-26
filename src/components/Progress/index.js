@@ -14,6 +14,7 @@ const Progress = (props) => {
 Progress.defaultProps = {
   onTop: false,
   percent: 0,
+  spinner: false,
   autoIncrement: true
 }
 

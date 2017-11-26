@@ -78,5 +78,5 @@ const DropdownWithState = withStateHandlers(
   }
 )(keyDownHandler({ keyCode: 27 })(Dropdown))
 
+export default onClickOutside(DropdownWithState, clickOutsideConfig)
 export { DropdownWithState as Dropdown }
-export default DropdownWithState
