@@ -74,7 +74,7 @@ const DropdownCompose = compose(
       hide()
     }
   }),
-  withKeydown(),
+  withKeydown({ keyCode: 27 }),
   onClickOutside
 )(Dropdown)
 
