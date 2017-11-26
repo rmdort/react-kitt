@@ -13,7 +13,7 @@ export default function withKeydown (options) {
           keyCode: null,
         },
         {
-          handleKeyDown: (props) => (event) => {
+          handleKeyDown: () => (event) => {
             /* Respect options.keyCode */
             return {
               keyCode: event.which === options.keyCode ? event.which : null
