@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
-import { withStateHandlers } from 'recompose'
+import { withStateHandlers, withHandlers, compose } from 'recompose'
 import onClickOutside from 'react-onclickoutside'
 import { ddClassName, ddActiveClassName, ddContentClassName, ddTriggerClassName, ddTriggerActiveClassName, ddRightClassName } from './../../settings'
 import { CSSTransition } from 'react-transition-group'
@@ -59,24 +59,25 @@ Dropdown.defaultProps = {
   hAlign: 'left'
 }
 
-var clickOutsideConfig = {
-  handleClickOutside: (instance) => {
-    return (e) => {
-      instance.stateUpdaters.hide()
-    }
-  }
-}
-
 /* With state */
-const DropdownWithState = withStateHandlers(
-  {
-    isOpen: false
-  },
-  {
-    toggle: ({ isOpen }) => (event) => ({ isOpen: !isOpen }),
-    hide: ({ isOpen }) => () => ({ isOpen: false })
-  }
-)(keyDownHandler({ keyCode: 27 })(Dropdown))
+const DropdownCompose = compose(
+  withStateHandlers(
+    {
+      isOpen: false
+    },
+    {
+      toggle: ({ isOpen }) => (event) => ({ isOpen: !isOpen }),
+      hide: ({ isOpen }) => () => ({ isOpen: false })
+    }
+  ),
+  withHandlers({
+    handleClickOutside: ({ hide }) => (event) => {
+      hide()
+    }
+  }),
+  keyDownHandler({ keyCode: 27 }),
+  onClickOutside,
+)(Dropdown)
 
-export default onClickOutside(DropdownWithState, clickOutsideConfig)
-export { DropdownWithState as Dropdown }
+export default DropdownCompose
+export { DropdownCompose as Dropdown }

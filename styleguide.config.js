@@ -1,4 +1,6 @@
 var path = require('path')
+const camelCase = require('lodash/camelCase')
+const upperFirst = require('lodash/upperFirst')
 var { version } = require('./package.json')
 
 module.exports = {
@@ -11,6 +13,13 @@ module.exports = {
     path.join(__dirname, './src/styles/main.scss'),
     path.resolve(__dirname, './src/index.js')
   ],
+  getComponentPathLine: (componentPath) => {
+    const dirname = path.dirname(componentPath, '.js')
+    const name = dirname.split('/').slice(-1)[0]
+    const componentName = upperFirst(camelCase(name))
+
+    return 'import ' + componentName + ' from \'react-kitt/components/' + name + '\''
+  },
   webpackConfig: {
     module: {
       rules: [

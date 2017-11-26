@@ -1,4 +1,5 @@
 Modal examples
+Uses https://github.com/reactjs/react-modal
 
 ```js
 initialState = { isOpen: false};
