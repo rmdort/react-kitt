@@ -20,6 +20,25 @@ module.exports = {
 
     return 'import ' + componentName + ' from \'react-kitt/components/' + name + '\''
   },
+  sections: [
+    {
+      name: 'Components',
+      components: 'src/components/**/*.js'
+    },
+    {
+      name: 'HOC',
+      sections: [
+        {
+          name: 'withToggle',
+          content: 'src/decorators/withToggle/Readme.md'
+        },
+        {
+          name: 'withKeydown',
+          content: 'src/decorators/withKeydown/Readme.md'
+        }
+      ]
+    }
+  ],
   webpackConfig: {
     module: {
       rules: [

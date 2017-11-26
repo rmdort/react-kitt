@@ -7,7 +7,7 @@ const emitter = mitt()
 /* Flag to check if events have been attached */
 var attached = false
 
-export function keyDownHandler (options) {
+export default function withKeydown (options) {
   return (WrappedComponent) => {
     class KeyDownHandler extends React.Component {
       constructor (props) {

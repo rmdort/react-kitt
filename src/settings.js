@@ -5,6 +5,9 @@ export const buttonGroupClassName = 'o-button-group'
 /* Icon */
 export const iconClassName = 'material-icons'
 
+/* Icon button */
+export const iconButtonClassName = 'o-iconbutton'
+
 /* Card */
 export const cardClassName = 'o-card'
 export const cardTitleClassName = 'o-card-title'
@@ -54,3 +57,6 @@ export const modalBodyClassName = 'o-modal-body'
 export const modalFooterClassName = 'o-modal-footer'
 export const modalCloseClassName = 'o-modal-close'
 export const overlayBackground = 'rgba(0,0,0,0.5)'
+
+/* Toggle */
+export const toggleClassName = 'o-toggle'
