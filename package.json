@@ -1,6 +1,6 @@
 {
   "name": "react-kitt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Super lightweight React User Inteface components",
   "main": "lib/index.js",
   "scripts": {
