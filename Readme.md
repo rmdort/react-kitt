@@ -1,17 +1,35 @@
 # React kitt
 
-Super lightweight React User Inteface components to help you get started.
+Super lightweight React User Inteface components to help you get started. All components are very easy to customize using `sass`. You can also extends `react-kitt` to create own components for your brand.
 
 Documentation - https://rmdort.gitlab.io/react-kitt/
 
-## What is included
+### What is included
 
-1. All React components
+1. All React functional components
 2. Customisable color theme
 3. SASS files for all components
 4. Material icons support
 5. Full License to the owner
 6. Lifetime support + Free future updates
+
+### List of components
+1. Alert
+2. Button
+3. Button Group
+4. Cards
+5. Dropdown and popovers
+6. Flex based grid
+7. Icon (material icons)
+8. Icon buttons
+9. Menu
+10. Highly customisable Modal dialog
+11. Pagination
+12. Pills
+13. Progress bars
+14. Tabs, accordion and toggles
+15. Toggle
+16. Tooltip
 
 ## How to use
 

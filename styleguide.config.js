@@ -47,7 +47,7 @@ module.exports = {
   styles: {
 		StyleGuide: {
 			sidebar: {
-				backgroundColor: '#fff',
+				backgroundColor: 'white',
 				boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px',
 				width: '250px'
 			}
@@ -55,31 +55,16 @@ module.exports = {
 		Link: {
 			link: {
 				'&, &:link, &:visited': {
-					color: '#000'
+					color: '#333'
 				}
 			}
 		},
 		Logo: {
 			logo: {
-				color: '#653ab0',
+				color: '#007bff',
 				fontSize: '22px',
 				textAlign: 'center'
 			}
-    },
-    SectionHeading: {
-      heading: {
-        width: '100%'
-      }
-    }
-  },
-  theme: {
-    fontSize: {
-      h1: 36,
-      h2: 30,
-      h3: 24,
-      h4: 18,
-      h5: 16,
-      h6: 16,
     }
   },
   webpackConfig: {
