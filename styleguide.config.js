@@ -22,11 +22,12 @@ module.exports = {
   },
   sections: [
     {
-      name: 'Getting started',
+      name: 'Introduction',
       content: 'Readme.md'
     },
     {
       name: 'Components',
+      content: 'docs/Components.md',
       components: 'src/components/**/index.js'
     },
     {
@@ -43,6 +44,44 @@ module.exports = {
       ]
     }
   ],
+  styles: {
+		StyleGuide: {
+			sidebar: {
+				backgroundColor: '#fff',
+				boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px',
+				width: '250px'
+			}
+		},
+		Link: {
+			link: {
+				'&, &:link, &:visited': {
+					color: '#000'
+				}
+			}
+		},
+		Logo: {
+			logo: {
+				color: '#653ab0',
+				fontSize: '22px',
+				textAlign: 'center'
+			}
+    },
+    SectionHeading: {
+      heading: {
+        width: '100%'
+      }
+    }
+  },
+  theme: {
+    fontSize: {
+      h1: 36,
+      h2: 30,
+      h3: 24,
+      h4: 18,
+      h5: 16,
+      h6: 16,
+    }
+  },
   webpackConfig: {
     module: {
       rules: [
