@@ -31,7 +31,7 @@
 /* Interactive menu */
 .o-menu__interactive {
   cursor: pointer;
-  &:hover, &-active {
+  &:hover, &:focus,&-active {
     background: $menu-item-hover-background;
     color: $menu-item-hover-color;
   }

@@ -14,22 +14,22 @@ Documentation - https://rmdort.gitlab.io/react-kitt/
 6. Lifetime support + Free future updates
 
 ### List of components
-1. Alert
-2. Button
-3. Button Group
-4. Cards
-5. Dropdown and popovers
-6. Flex based grid
-7. Icon (material icons)
-8. Icon buttons
-9. Menu
-10. Highly customisable Modal dialog
-11. Pagination
-12. Pills
-13. Progress bars
-14. Tabs, accordion and toggles
-15. Toggle
-16. Tooltip
+1. [Alert](#alert)
+2. [Button](#button)
+3. [Button Group](#buttongroup)
+4. [Cards](#card)
+5. [Dropdown and popovers](#dropdown)
+6. [Flex based grid][#row]
+7. [Icon (material icons)](#icon)
+8. [Icon buttons](#iconbutton)
+9. [Menu](#menu)
+10. [Highly customisable Modal dialog](#modal)
+11. [Pagination](#pagination)
+12. [Pills](#pill)
+13. [Progress bars](#progress)
+14. [Tabs, accordion and toggles](#tab)
+15. [Toggle](#toggle)
+16. [Tooltip](#tooltip)
 
 ## How to use
 

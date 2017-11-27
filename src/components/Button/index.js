@@ -25,7 +25,7 @@ function Button (props) {
   return (
     React.createElement(tagName, {
       className: classes,
-      href: href,
+      href,
       ...rest
     }, children || label)
   )

@@ -28,6 +28,7 @@ function Dropdown ({ isOpen, children, animation, animationTimeout, toggle, hide
       <div
         className={triggerClassName}
         onClick={toggle}
+        tabIndex='0'
       >
         {label}
       </div>

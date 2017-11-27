@@ -1,5 +1,4 @@
-import React from 'react'
-import { withStateHandlers, compose } from 'recompose'
+import { withStateHandlers } from 'recompose'
 
 const withToggle = (WrappedComponent) => {
   return withStateHandlers(

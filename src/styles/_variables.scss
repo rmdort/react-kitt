@@ -32,17 +32,18 @@ $button-min-width: 2.5rem !default;
 $button-font-size: 1rem !default;
 $button-font-size-small: 0.9rem !default;
 $button-font-size-large: 1.2rem !default;
-$button-font-color-default: #666 !default;
 $button-vertical-align: $icon-vertical-align;
 $button-background-color: #ebf1f5 !default;
 $button-padding: 0.5rem 1rem !default;
 $button-spacing: 0.15rem !default;
 $button-border-width: 1px !default;
-$button-border-color: #666 !default;
 $button-border-style: solid !default;
 $button-font-color: white !default;
 $button-border-radius: $default-border-radius !default;
 $button-box-shadow: $base-box-shadow !default;
+
+$button-font-color-default: $base-color !default;
+$button-border-color: $base-color !default;
 
 $button-primary-color: $primary-color !default;
 $button-primary-border-color: $primary-color !default;
@@ -75,8 +76,8 @@ $card-margin-bottom: $default-spacing !default;
 /* Card body */
 $card-background: white;
 $card-body-padding: 1.5rem 1rem !default;
-$card-title-padding: 0.5rem 1rem !default;
-$card-footer-padding: 0.5rem 1rem !default;
+$card-title-padding: 1rem 1rem !default;
+$card-footer-padding: 1rem 1rem !default;
 
 /* Card footer */
 $card-footer-border-width: 1px !default;

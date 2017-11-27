@@ -22,4 +22,7 @@ Toggle.propTypes = {
   open: PropTypes.func
 }
 
-export default withToggle(Toggle)
+const toggleWithDecorator = withToggle(Toggle)
+
+export { toggleWithDecorator as Toggle }
+export default toggleWithDecorator

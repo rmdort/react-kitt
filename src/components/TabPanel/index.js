@@ -12,4 +12,5 @@ function TabPanel ({ children, ...rest }) {
   )
 }
 
+export { TabPanel }
 export default TabPanel

@@ -11,7 +11,7 @@ class Pagination extends React.Component {
     perPage: 10,
     currentPage: 1,
     totalResults: 0,
-    onChangePage: null,
+    onChange: null,
     labelPageNext: 'Next',
     labelPagePrev: 'Prev',
     scrollTop: false
@@ -21,10 +21,7 @@ class Pagination extends React.Component {
     totalResults: PropTypes.number.isRequired,
     currentPage: PropTypes.any,
     perPage: PropTypes.any.isRequired,
-    /**
-     * Handle page change event
-     */
-    onChangePage: PropTypes.func,
+    onChange: PropTypes.func,
     labelPageNext: PropTypes.string,
     labelPagePrev: PropTypes.string,
     scrollTop: PropTypes.bool,
@@ -55,10 +52,10 @@ class Pagination extends React.Component {
   };
 
   selectPage = (page) => {
-    let { onChangePage, scrollTop } = this.props
+    let { onChange, scrollTop } = this.props
 
-    if (onChangePage) {
-      return onChangePage(page)
+    if (onChange) {
+      return onChange(page)
     }
 
     if (scrollTop) this.pagination.parentNode.scrollIntoView()

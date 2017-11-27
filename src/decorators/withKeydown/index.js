@@ -1,4 +1,3 @@
-import React from 'react'
 import emitter from './../../emitter'
 import { compose, lifecycle, withStateHandlers } from 'recompose'
 

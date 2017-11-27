@@ -13,7 +13,7 @@ function Pill ({ children, closeLabel, className, onClick, onClose }) {
     : 'div'
   return (
     <div className={classes}>
-      {React.createElement(tagName, { className: pillButtonClassName}, children) }
+      {React.createElement(tagName, { className: pillButtonClassName }, children)}
       {onClose
         ? <button className={pillCloseClassName} onClick={onClose}><span>{closeLabel}</span></button>
         : null

@@ -12,8 +12,8 @@ Card with title and footer
   title='Card title'
   footer={
     <div>
-      <a href='#'>Cancel</a>
       <Button label='Save' />
+      <Button flat>Cancel</Button>
     </div>
   }
   zIndex={3}

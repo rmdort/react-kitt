@@ -52,13 +52,6 @@ module.exports = {
         width: '250px'
       }
     },
-    Link: {
-      link: {
-        '&, &:link, &:visited': {
-          color: '#333'
-        }
-      }
-    },
     Logo: {
       logo: {
         color: '#007bff',
