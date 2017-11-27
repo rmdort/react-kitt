@@ -4,7 +4,7 @@ import cx from 'classnames'
 import { menuClassName } from './../../settings'
 import './style.scss'
 
-const Menu = ({ children, className }) => {
+function Menu ({ children, className }) {
   const classes = cx(menuClassName, className)
   return (
     <div className={classes}>

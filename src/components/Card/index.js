@@ -5,7 +5,7 @@ import './style.scss'
 import { cardClassName, cardBodyClassName, cardTitleClassName, cardFooterClassName } from './../../settings'
 import { getElevationClassName } from './../../utils'
 
-const Card = ({ className, children, title, footer, zIndex }) => {
+function Card ({ className, children, title, footer, zIndex }) {
   const classes = cx(cardClassName, getElevationClassName(zIndex), className)
   if (!title && !footer && !children) return null
   return (

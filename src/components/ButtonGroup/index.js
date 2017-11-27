@@ -7,7 +7,7 @@ import './style.scss'
 /**
  * Button groups arrange multiple buttons in a horizontal or vertical group.
  */
-const ButtonGroup = ({ children, className, ...rest }) => {
+function ButtonGroup ({ children, className, ...rest }) {
   const classes = cx(buttonGroupClassName, className)
   return (
     <div

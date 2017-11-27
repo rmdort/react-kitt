@@ -4,43 +4,30 @@ import cx from 'classnames'
 import './style.scss'
 import Icon from './../Icon'
 import { iconButtonClassName } from './../../settings'
+import Button from './../Button'
 
 /**
  * Buttons trigger actions when clicked
  */
-const IconButton = (props) => {
-  let { name, href, className, primary, secondary, ...rest } = props
-  /* Add className */
-  const classes = cx(iconButtonClassName, {
-    [`${iconButtonClassName}-primary`]: primary,
-    [`${iconButtonClassName}-secondary`]: secondary
-  }, className)
-
-  const tagName = href
-    ? 'a'
-    : 'button'
-
+function IconButton (props) {
+  let { name, className, ...rest } = props
+  let classes = cx(className, iconButtonClassName)
   return (
-    React.createElement(tagName, {
-      className: classes,
-      href: href,
-      ...rest
-    }, React.createElement(Icon, { name }))
+    <Button className={classes} {...rest}>
+      <Icon name={name} />
+    </Button>
   )
 }
 
 IconButton.propTypes = {
-  /**
-   * Name of the icon
-   */
+  /* Name of the icon */
   name: PropTypes.string,
-  primary: PropTypes.bool,
-  secondary: PropTypes.bool
+  className: PropTypes.string
 }
 
 IconButton.defaultProps = {
-  primary: false,
-  secondary: false
+  name: null,
+  className: null
 }
 
 export { IconButton }

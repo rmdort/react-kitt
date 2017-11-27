@@ -69,6 +69,10 @@ Add this to your webpack config file
 }
 ````
 
-## Example project
+### Example project
 
 We have include a demo webpack project in `example` folder
+
+#### React guidelines
+
+https://github.com/airbnb/javascript/blob/master/react/README.md

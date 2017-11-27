@@ -10,7 +10,7 @@ export default function withKeydown (options) {
     return compose(
       withStateHandlers(
         {
-          keyCode: null,
+          keyCode: null
         },
         {
           handleKeyDown: () => (event) => {
@@ -34,7 +34,7 @@ export default function withKeydown (options) {
         }
       })
     )(WrappedComponent)
-  }  
+  }
 }
 
 function initEvents () {

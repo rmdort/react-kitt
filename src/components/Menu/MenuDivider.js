@@ -1,7 +1,7 @@
 import React from 'react'
 import { menuDividerClassName } from './../../settings'
 
-const MenuDivider = () => {
+function MenuDivider () {
   return (
     <div className={menuDividerClassName} />
   )

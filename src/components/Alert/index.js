@@ -6,7 +6,7 @@ import { alertClassName, alertTitleClassName, alertCloseClassName } from './../.
 import { CSSTransition } from 'react-transition-group'
 import './style.scss'
 
-const Alert = ({ title, isOpen, children, onClose, hide, animation, animationTimeout, className, type }) => {
+function Alert ({ title, isOpen, children, onClose, hide, animation, animationTimeout, className, type }) {
   let classes = cx(alertClassName, `${alertClassName}-${type}`, className)
   function handleClose () {
     onClose && onClose()

@@ -4,7 +4,7 @@ import cx from 'classnames'
 import { pillClassName, pillCloseClassName, pillButtonClassName } from './../../settings'
 import './style.scss'
 
-const Pill = ({ children, closeLabel, className, onClick, onClose }) => {
+function Pill ({ children, closeLabel, className, onClick, onClose }) {
   const classes = cx(pillClassName, {
     [`${pillClassName}__interactive`]: onClick
   }, className)

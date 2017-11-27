@@ -5,7 +5,7 @@ import ModalWindow from 'react-modal'
 import { modalClassName, modalTitleClassName, modalBodyClassName, modalFooterClassName, modalCloseClassName, modalOverlayClassName, modalContainerClassName } from './../../settings'
 import './style.scss'
 
-const Modal = ({ isOpen, onRequestClose, style, title, children, footer, type, fullScreen, ...rest }) => {
+function Modal ({ isOpen, onRequestClose, style, title, children, footer, type, fullScreen, ...rest }) {
   let classes = cx(modalContainerClassName, {
     [`${modalContainerClassName}-${type}`]: type,
     [`${modalContainerClassName}-fullscreen`]: fullScreen
@@ -22,8 +22,8 @@ const Modal = ({ isOpen, onRequestClose, style, title, children, footer, type, f
       <div className={modalClassName}>
         {title
           ? <div className={modalTitleClassName}>
-              {title}
-            </div>
+            {title}
+          </div>
           : null
         }
         <div className={modalBodyClassName}>
@@ -34,8 +34,8 @@ const Modal = ({ isOpen, onRequestClose, style, title, children, footer, type, f
         </div>
         {footer
           ? <div className={modalFooterClassName}>
-              {footer}
-            </div>
+            {footer}
+          </div>
           : null
         }
       </div>
@@ -50,14 +50,14 @@ Modal.defaultProps = {
   type: 'large',
   fullScreen: false,
   shouldCloseOnEsc: true,
-  shouldCloseOnOverlayClick: true,
+  shouldCloseOnOverlayClick: true
 }
 
 Modal.propTypes = {
   type: PropTypes.oneOf([null, 'small', 'medium', 'large', 'confirm']),
   fullScreen: PropTypes.bool,
   shouldCloseOnEsc: PropTypes.bool,
-  shouldCloseOnOverlayClick: PropTypes.bool,
+  shouldCloseOnOverlayClick: PropTypes.bool
 }
 
 export { Modal }

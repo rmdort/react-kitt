@@ -9,7 +9,7 @@ import './style.scss'
  *
  * https://github.com/chinchang/hint.css/
  */
-const ToolTip = ({ className, children, label, position, type }) => {
+function ToolTip ({ className, children, label, position, type }) {
   const classes = cx(tooltipClassName, `${tooltipClassName}--${position}`, `${tooltipClassName}--${type}`, className)
   return (
     <button role='tooltip' type='button' className={classes} aria-label={label}>{children}</button>

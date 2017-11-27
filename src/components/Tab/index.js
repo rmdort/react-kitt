@@ -6,7 +6,7 @@ import { withStateHandlers } from 'recompose'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import './style.scss'
 
-const Tab = ({ className, children, activeTab, showOne, toggle, animation, animationTimeout, setActiveTab }) => {
+function Tab ({ className, children, activeTab, showOne, toggle, animation, animationTimeout, setActiveTab }) {
   const classes = cx(tabClassName, {
     [`${tabToggleClassName}`]: toggle,
     [`${tabDefaultClassName}`]: !toggle,

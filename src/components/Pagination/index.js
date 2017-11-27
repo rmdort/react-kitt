@@ -138,7 +138,7 @@ class Pagination extends React.Component {
 /**
  * Page Number
  */
-const PageNumber = ({ page, isActive, selectPage }) => {
+function PageNumber ({ page, isActive, selectPage }) {
   function handleClick () {
     if (!isNaN(page)) selectPage(page)
   }

@@ -4,7 +4,7 @@ import cx from 'classnames'
 import './style.scss'
 import { menuItemClassName, menuItemInteractiveClassName } from './../../settings'
 
-const MenuItem = (props) => {
+function MenuItem (props) {
   let { label, href, children, onClick, active, className, ...rest } = props
   /* Check if interactive */
   const isInteractive = onClick || href

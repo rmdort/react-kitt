@@ -8,7 +8,7 @@ import { CSSTransition } from 'react-transition-group'
 import './style.scss'
 import withKeydown from './../../decorators/withKeydown'
 
-const Dropdown = ({ isOpen, children, animation, animationTimeout, toggle, hide, label, hAlign, keyCode }) => {
+function Dropdown ({ isOpen, children, animation, animationTimeout, toggle, hide, label, hAlign, keyCode }) {
   const parentClassName = cx(ddClassName, {
     [`${ddActiveClassName}`]: isOpen,
     [`${ddRightClassName}`]: hAlign === 'right'
@@ -18,7 +18,7 @@ const Dropdown = ({ isOpen, children, animation, animationTimeout, toggle, hide,
   })
   /* Close on esc */
   if (keyCode === 27) {
-    /* Prevent race conditions for render and setState */ 
+    /* Prevent race conditions for render and setState */
     setTimeout(hide)
   }
   /* If animation is disabled reset animationTimeout */

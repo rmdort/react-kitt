@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ProgressBar from 'react-line-progress'
 import './style.scss'
 
-const Progress = (props) => {
+function Progress (props) {
   return (
     <ProgressBar
       {...props}

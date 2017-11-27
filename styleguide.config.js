@@ -18,7 +18,7 @@ module.exports = {
     const name = dirname.split('/').slice(-1)[0]
     const componentName = upperFirst(camelCase(name))
 
-    return `import { ${componentName} } from 'react-kitt/${name}'`
+    return `import { ${componentName} } from 'react-kitt'`
   },
   sections: [
     {
@@ -45,26 +45,26 @@ module.exports = {
     }
   ],
   styles: {
-		StyleGuide: {
-			sidebar: {
-				backgroundColor: 'white',
-				boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px',
-				width: '250px'
-			}
-		},
-		Link: {
-			link: {
-				'&, &:link, &:visited': {
-					color: '#333'
-				}
-			}
-		},
-		Logo: {
-			logo: {
-				color: '#007bff',
-				fontSize: '22px',
-				textAlign: 'center'
-			}
+    StyleGuide: {
+      sidebar: {
+        backgroundColor: 'white',
+        boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px',
+        width: '250px'
+      }
+    },
+    Link: {
+      link: {
+        '&, &:link, &:visited': {
+          color: '#333'
+        }
+      }
+    },
+    Logo: {
+      logo: {
+        color: '#007bff',
+        fontSize: '22px',
+        textAlign: 'center'
+      }
     }
   },
   webpackConfig: {

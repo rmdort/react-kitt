@@ -28,6 +28,7 @@ $icon-vertical-align: -0.4375rem !default;
 $button-height: 2.5rem !default;
 $button-height-small: 2.125rem !default;
 $button-height-large: 3rem !default;
+$button-min-width: 2.5rem !default;
 $button-font-size: 1rem !default;
 $button-font-size-small: 0.9rem !default;
 $button-font-size-large: 1.2rem !default;
@@ -102,6 +103,11 @@ $menu-item-padding: 0.6rem 1rem;
 $menu-item-hover-background: $primary-color;
 $menu-item-hover-color: white;
 $menu-header-color: #666;
+
+/* Modal */
+$modal-title-padding: 1rem 1.5rem;
+$modal-body-padding: 1.5rem;
+$modal-footer-padding: 1rem 1.5rem;
 
 /* Breakpoints
    0 - 480 (mobile), 480+ (medium), 600+ (tablet), 960+ (desktop), 1300+ (wide)

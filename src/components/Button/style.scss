@@ -8,6 +8,7 @@
   cursor: pointer;
   border-radius: $button-border-radius;
   height: $button-height;
+  min-width: $button-min-width;
   text-decoration: none;
   display: inline-block;
   vertical-align: middle;

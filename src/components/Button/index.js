@@ -7,7 +7,7 @@ import { buttonClassName } from './../../settings'
 /**
  * Buttons trigger actions when clicked
  */
-const Button = (props) => {
+function Button (props) {
   let { label, href, type, size, children, className, primary, secondary, outline, flat, ...rest } = props
   /* Add className */
   const classes = cx(buttonClassName, {

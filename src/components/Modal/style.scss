@@ -11,18 +11,18 @@
 /* Title */
 .o-modal-title {
   border-bottom: 1px #ccc solid;
-  padding: 1rem;
+  padding: $modal-title-padding;
 }
 
 .o-modal-body {
   flex: 1;
   overflow: auto;
-  padding: 1rem;
+  padding: $modal-body-padding;
 }
 
 /* Footer */
 .o-modal-footer {
-  padding: 1rem;
+  padding: $modal-footer-padding;
   border-top: 1px #ccc solid;
 }
 
