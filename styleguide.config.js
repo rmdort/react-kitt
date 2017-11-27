@@ -18,7 +18,7 @@ module.exports = {
     const name = dirname.split('/').slice(-1)[0]
     const componentName = upperFirst(camelCase(name))
 
-    return 'import ' + componentName + ' from \'react-kitt/components/' + name + '\''
+    return `import { ${componentName} } from 'react-kitt/${name}'`
   },
   sections: [
     {
