@@ -63,6 +63,8 @@ Confirm dialog
 
 ```js
 initialState = { isOpen: false};
+const close = () => setState({ isOpen: false });
+const open = () => setState({ isOpen: true });
 <div>
   <Modal
     isOpen={state.isOpen}
@@ -71,10 +73,11 @@ initialState = { isOpen: false};
     shouldCloseOnOverlayClick={false}
   >
     <p>Are you sure you want to delete ?</p>
-    <Button onClick={() => setState({ isOpen: false })} type='small' primary outline>Yes sure</Button> <Button onClick={() => setState({ isOpen: false })} type='small' flat>Nope, cancel</Button> 
+    <Button onClick={close} size='small' type='danger' primary outline>Yes sure</Button>
+    <Button onClick={close} size='small' flat>Nope, cancel</Button> 
 
   </Modal>
-  <Button onClick={() => setState({ isOpen: true })}>
+  <Button onClick={open}>
     Open confirm modal
   </Button>
 </div>

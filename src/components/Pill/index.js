@@ -5,12 +5,15 @@ import { pillClassName, pillCloseClassName, pillButtonClassName } from './../../
 import './style.scss'
 
 const Pill = ({ children, closeLabel, className, onClick, onClose }) => {
-  const classes = cx(pillClassName, className)
+  const classes = cx(pillClassName, {
+    [`${pillClassName}__interactive`]: onClick
+  }, className)
+  const tagName = onClick
+    ? 'button'
+    : 'div'
   return (
     <div className={classes}>
-      <button onClick={onClick} className={pillButtonClassName}>
-        {children}
-      </button>
+      {React.createElement(tagName, { className: pillButtonClassName}, children) }
       {onClose
         ? <button className={pillCloseClassName} onClick={onClose}><span>{closeLabel}</span></button>
         : null

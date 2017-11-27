@@ -3,6 +3,7 @@ export const buttonClassName = 'o-button'
 export const buttonGroupClassName = 'o-button-group'
 
 /* Icon */
+export const iconBaseClass = 'o-icon'
 export const iconClassName = 'material-icons'
 
 /* Icon button */

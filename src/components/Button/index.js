@@ -8,14 +8,15 @@ import { buttonClassName } from './../../settings'
  * Buttons trigger actions when clicked
  */
 const Button = (props) => {
-  let { label, href, type, children, className, primary, secondary, outline, flat, ...rest } = props
+  let { label, href, type, size, children, className, primary, secondary, outline, flat, ...rest } = props
   /* Add className */
   const classes = cx(buttonClassName, {
     [`${buttonClassName}-primary`]: primary,
     [`${buttonClassName}-secondary`]: secondary,
     [`${buttonClassName}-outline`]: outline,
-    [`${buttonClassName}-flat`]: flat
-  }, `${buttonClassName}-${type}`, className)
+    [`${buttonClassName}-flat`]: flat,
+    [`${buttonClassName}-${type}`]: type
+  }, `${buttonClassName}-${size}`, className)
 
   const tagName = href
     ? 'a'
@@ -40,7 +41,8 @@ Button.propTypes = {
   outline: PropTypes.bool,
   flat: PropTypes.bool,
   children: PropTypes.any,
-  type: PropTypes.oneOf(['small', 'normal', 'large'])
+  type: PropTypes.oneOf(['danger', 'success', 'info', 'warning']),
+  size: PropTypes.oneOf(['small', 'normal', 'large'])
 }
 
 Button.defaultProps = {
@@ -48,7 +50,8 @@ Button.defaultProps = {
   secondary: false,
   outline: false,
   flat: false,
-  type: 'normal'
+  size: 'normal',
+  type: null
 }
 
 export { Button }

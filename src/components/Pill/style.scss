@@ -5,9 +5,16 @@
   border: none;
   background: $pill-background;
   height: $pill-height;
+  line-height: $pill-height;
   border-radius: $pill-border-radius;
   padding-left: $pill-padding-left;
   padding-right: $pill-padding-right;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+/* Only for interactive */
+.o-pill-button__interactive {
   cursor: pointer;
 }
 
@@ -17,15 +24,16 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin-left: 1px;
+  cursor: pointer;
 }
 
 .o-pill {
-  button:first-child {
+  > div:first-child, > button:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  button:last-child {
+  > div:last-child, > button:last-child {
     border-top-right-radius: $pill-border-radius;
     border-bottom-right-radius: $pill-border-radius;
   }

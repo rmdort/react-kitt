@@ -5,5 +5,5 @@ Pill example
 ```
 
 ```js
-<Pill onClose={() => {}}>First pill</Pill>
+<Pill onClick={() => {}} onClose={() => {}}>First pill</Pill>
 ```

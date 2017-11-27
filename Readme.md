@@ -4,6 +4,15 @@ Super lightweight React User Inteface components to help you get started.
 
 Documentation - https://rmdort.gitlab.io/react-kitt/
 
+## What is included
+
+1. All React components
+2. Customisable color theme
+3. SASS files for all components
+4. Material icons support
+5. Full License to the owner
+6. Lifetime support + Free future updates
+
 ## How to use
 
 ### Install react-kitt using `yarn` or `npm`

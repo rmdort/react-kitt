@@ -76,6 +76,57 @@
   }
 }
 
+/* Danger */
+.o-button-danger {
+  background: $button-danger-color;
+  color: $button-font-color;
+  border-color: $button-danger-border-color;
+
+  /* Hover */
+  &:hover, &:focus {
+    background-color: lighten($button-danger-color, 5%);
+  }
+
+  /* Active */
+  &:active {
+    background-color: darken($button-danger-color, 5%);
+  }
+}
+
+/* Info */
+.o-button-info {
+  background: $button-info-color;
+  color: $button-font-color;
+  border-color: $button-info-border-color;
+
+  /* Hover */
+  &:hover, &:focus {
+    background-color: lighten($button-info-color, 5%);
+  }
+
+  /* Active */
+  &:active {
+    background-color: darken($button-info-color, 5%);
+  }
+}
+
+/* Warning */
+.o-button-warning {
+  background: $button-warning-color;
+  color: $button-font-color;
+  border-color: $button-warning-border-color;
+
+  /* Hover */
+  &:hover, &:focus {
+    background-color: lighten($button-warning-color, 5%);
+  }
+
+  /* Active */
+  &:active {
+    background-color: darken($button-warning-color, 5%);
+  }
+}
+
 /* Outline */
 .o-button-outline {
   background: none;
@@ -105,6 +156,48 @@
 
     &:active {
       background-color: darken($button-secondary-color, 5%);
+      color: white;
+    }
+  }
+
+  &.o-button-danger {
+    color: $button-danger-color;   
+
+    &:hover, &:focus {
+      color: white;
+      background: $button-danger-color;
+    }
+
+    &:active {
+      background-color: darken($button-danger-color, 5%);
+      color: white;
+    }
+  }
+
+  &.o-button-warning {
+    color: $button-warning-color;   
+
+    &:hover, &:focus {
+      color: white;
+      background: $button-warning-color;
+    }
+
+    &:active {
+      background-color: darken($button-warning-color, 5%);
+      color: white;
+    }
+  }
+
+  &.o-button-info {
+    color: $button-info-color;   
+
+    &:hover, &:focus {
+      color: white;
+      background: $button-info-color;
+    }
+
+    &:active {
+      background-color: darken($button-info-color, 5%);
       color: white;
     }
   }
@@ -148,6 +241,48 @@
 
     &:active {
       background-color: darken($button-secondary-color, 5%);
+      color: white;
+    }
+  }
+
+  &.o-button-danger {
+    color: $button-danger-color;   
+
+    &:hover, &:focus {
+      color: white;
+      background: $button-danger-color;
+    }
+
+    &:active {
+      background-color: darken($button-danger-color, 5%);
+      color: white;
+    }
+  }
+
+  &.o-button-warning {
+    color: $button-warning-color;   
+
+    &:hover, &:focus {
+      color: white;
+      background: $button-warning-color;
+    }
+
+    &:active {
+      background-color: darken($button-warning-color, 5%);
+      color: white;
+    }
+  }
+
+  &.o-button-info {
+    color: $button-info-color;   
+
+    &:hover, &:focus {
+      color: white;
+      background: $button-info-color;
+    }
+
+    &:active {
+      background-color: darken($button-info-color, 5%);
       color: white;
     }
   }
