@@ -4,9 +4,19 @@
 .o-alert {
   background: $alert-info-background;
   padding: 1em;
+  position: relative;
 }
 
 /* Title */
 .o-alert-title {
   font-weight: bold;
+}
+
+/* Close */
+.o-alert-close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }

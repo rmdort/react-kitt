@@ -40,3 +40,5 @@ export default function withKeydown (options) {
 function initEvents () {
   document.addEventListener('keydown', (event) => emitter.emit('keydown', event))
 }
+
+export { withKeydown }

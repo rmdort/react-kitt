@@ -2,7 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
 import { withStateHandlers } from 'recompose'
-import { alertClassName, alertTitleClassName } from './../../settings'
+import { alertClassName, alertTitleClassName, alertCloseClassName } from './../../settings'
 import { CSSTransition } from 'react-transition-group'
 import './style.scss'
 
@@ -23,7 +23,7 @@ const Alert = ({ title, isOpen, children, onClose, hide, animation, animationTim
           ? children({ hide: handleClose })
           : children
         }
-        <button onClick={handleClose}>Hide</button>
+        <button className={alertCloseClassName} onClick={handleClose}>Hide</button>
       </div>
     </CSSTransition>
   )

@@ -45,6 +45,7 @@ export const menuHeaderClassName = 'o-menu-header'
 /* Alert */
 export const alertClassName = 'o-alert'
 export const alertTitleClassName = 'o-alert-title'
+export const alertCloseClassName = 'o-alert-close'
 
 /* Pill */
 export const pillClassName = 'o-pill'

@@ -14,4 +14,5 @@ const withToggle = (WrappedComponent) => {
   )(WrappedComponent)
 }
 
+export { withToggle }
 export default withToggle

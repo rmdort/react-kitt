@@ -22,6 +22,10 @@ module.exports = {
   },
   sections: [
     {
+      name: 'Getting started',
+      content: 'Readme.md'
+    },
+    {
       name: 'Components',
       components: 'src/components/**/index.js'
     },
