@@ -33,13 +33,6 @@ Documentation - https://rmdort.gitlab.io/react-kitt/
 
 ## How to use
 
-### Install react-kitt using `yarn` or `npm`
-
-```md
-yarn add react-kitt
-or
-npm install react-kitt
-```
 
 ### Include react-kitt styles
 ```md
