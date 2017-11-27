@@ -18,7 +18,7 @@ const Dropdown = ({ isOpen, children, animation, animationTimeout, toggle, hide,
   })
   /* Close on esc */
   if (keyCode === 27) {
-    setTimeout(hide)
+    hide()
   }
   /* If animation is disabled reset animationTimeout */
   animationTimeout = !animation ? 0 : animationTimeout

@@ -60,4 +60,5 @@ Modal.propTypes = {
   shouldCloseOnOverlayClick: PropTypes.bool,
 }
 
+export { Modal }
 export default Modal
