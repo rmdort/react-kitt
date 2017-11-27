@@ -11,7 +11,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'react-kitt': path.join(__dirname, './../src')
+      // 'react-kitt': path.join(__dirname, './../src')
     },
     modules: [
       'node_modules'

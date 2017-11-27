@@ -25,7 +25,7 @@ npm install react-kitt
 
 ### Include react-kitt styles
 ```md
-import 'react-kitt/styles/main.scss'
+import 'react-kitt/lib/styles/main.scss'
 ```
 
 ### Import components from react-kitt
@@ -53,4 +53,4 @@ Add this to your webpack config file
 
 ## Example project
 
-We have include a demo webpack project in `example`folder
+We have include a demo webpack project in `example` folder

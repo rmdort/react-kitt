@@ -5,3 +5,6 @@ docs
 setup.js
 styleguide.*
 scripts
+preview_screenshots
+*.zip
+*.yml

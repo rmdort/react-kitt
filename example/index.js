@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Button, Dropdown, Menu, MenuItem, MenuDivider, withToggle } from 'react-kitt'
 
-import 'react-kitt/styles/main.scss'
+import 'react-kitt/lib/styles/main.scss'
 
 const noop = () => {}
 

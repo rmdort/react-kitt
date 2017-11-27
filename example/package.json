@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "react-kitt": "^1.0.2",
+    "react-kitt": "^1.0.4",
     "redux": "^3.5.2"
   },
   "devDependencies": {

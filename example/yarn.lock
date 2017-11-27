@@ -1901,6 +1901,10 @@ execa@^0.7.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exenv@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+
 expand-brackets@^0.1.4:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/expand-brackets/-/expand-brackets-0.1.5.tgz#df07284e342a807cd733ac5af72411e581d1177b"
@@ -3810,7 +3814,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -3941,9 +3945,9 @@ react-dom@^16.1.1:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-kitt@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-kitt/-/react-kitt-1.0.2.tgz#a362b469a16f59dc7ea525d42ffd89fc8ad6f2cf"
+react-kitt@^1.0.4:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-kitt/-/react-kitt-1.0.5.tgz#e27cd29cf5bebec7888859e2325c6dc4510ec47d"
   dependencies:
     classnames "^2.2.5"
     flexboxgrid "^6.3.1"
@@ -3953,6 +3957,7 @@ react-kitt@^1.0.2:
     react "^16.1.1"
     react-dom "^16.1.1"
     react-line-progress "^1.0.3"
+    react-modal "^3.1.4"
     react-onclickoutside "^6.7.0"
     react-transition-group "^2.2.1"
     recompose "^0.26.0"
@@ -3963,6 +3968,13 @@ react-line-progress@^1.0.3:
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.5.8"
+
+react-modal@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.4.tgz#eea7369ea4f05ab2897ccca2c676d7d81a5a88b0"
+  dependencies:
+    exenv "^1.2.0"
+    prop-types "^15.5.10"
 
 react-onclickoutside@^6.7.0:
   version "6.7.0"
