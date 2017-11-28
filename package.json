@@ -12,7 +12,7 @@
     "postpublish": "rimraf lib",
     "copy:scss": "gulp --gulpfile scripts/gulpfile.js",
     "lint": "eslint src",
-    "pages": "buildbranch gh-pages docs"
+    "pages": "npm run docs:build && buildbranch gh-pages docs",
   },
   "pre-commit": [
     "lint"
