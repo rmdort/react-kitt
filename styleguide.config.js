@@ -27,7 +27,7 @@ module.exports = {
     },
     {
       name: 'Components',
-      content: 'docs/Components.md',
+      content: 'src/components/Readme.md',
       components: 'src/components/**/index.js'
     },
     {
