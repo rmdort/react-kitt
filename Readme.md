@@ -34,7 +34,7 @@ Documentation - https://rmdort.github.io/react-kitt/
 
 Install react-kitt from npm
 
-```
+```md
 yarn add react-kitt
 
 or
