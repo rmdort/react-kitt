@@ -34,7 +34,7 @@
     "small"
   ],
   "author": "Vinay M <rmdort@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
