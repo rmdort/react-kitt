@@ -61,24 +61,26 @@ initialState = { isOpen: false};
 
 Confirm dialog
 
-```js
-initialState = { isOpen: false};
-const close = () => setState({ isOpen: false });
-const open = () => setState({ isOpen: true });
-<div>
-  <Modal
-    isOpen={state.isOpen}
-    onRequestClose={() => setState({ isOpen: false })}
-    type='confirm'
-    shouldCloseOnOverlayClick={false}
-  >
-    <p>Are you sure you want to delete ?</p>
-    <Button onClick={close} size='small' type='danger' primary outline>Yes sure</Button>
-    <Button onClick={close} size='small' flat>Nope, cancel</Button> 
+*We are using a `Toggle` component here*
 
-  </Modal>
-  <Button onClick={open}>
-    Open confirm modal
-  </Button>
-</div>
+```js
+<Toggle>
+  {({ isOpen, toggle }) => {
+    return (
+      <div>
+        <Modal
+          isOpen={isOpen}
+          onRequestClose={toggle}
+          type='confirm'
+          shouldCloseOnOverlayClick={false}
+        >
+          <p>Are you sure you want to delete ?</p>
+          <Button onClick={toggle} size='small' type='danger' primary outline>Yes sure</Button>
+          <Button onClick={toggle} size='small' flat>Nope, cancel</Button> 
+        </Modal>
+        <Button onClick={toggle}>Open confirm modal</Button>
+      </div>
+    )
+  }}
+</Toggle>
 ```
