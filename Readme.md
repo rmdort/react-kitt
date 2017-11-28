@@ -32,6 +32,15 @@ Documentation - https://rmdort.github.io/react-kitt/
 
 ## How to use
 
+Install react-kitt from npm
+
+```
+yarn add react-kitt
+
+or
+
+npm install react-kit --save
+```
 
 ### Include react-kitt styles
 ```md
