@@ -12,6 +12,7 @@ Tab example
 ```
 
 ### Toggle
+Change a tab to a toggle (especially on mobile devices) easily
 
 ```js
 <Tab toggle animation='o-slide'>
@@ -25,6 +26,7 @@ Tab example
 ```
 
 ### Accordion
+Change a tab to an accordion with `showOne` option
 
 ```js
 <Tab toggle showOne animation='o-slide'>
