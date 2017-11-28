@@ -10,8 +10,7 @@ Documentation - https://rmdort.gitlab.io/react-kitt/
 2. Customisable color theme
 3. SASS files for all components
 4. Material icons support
-5. Full License to the owner
-6. Lifetime support + Free future updates
+5. MIT License
 
 ### List of components
 1. [Alert](#alert)
