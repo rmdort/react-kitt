@@ -55,7 +55,7 @@ import 'react-kitt/lib/styles/main.scss'
 
 You can enable [Tailwind CSS](https://tailwindcss.com/) in `styles/main.scss` by uncommenting 
 
-```
+```md
 @tailwind preflight;
 @tailwind utilities;
 ```
