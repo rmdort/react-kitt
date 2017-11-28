@@ -6,7 +6,7 @@ Documentation - https://rmdort.gitlab.io/react-kitt/
 
 ### What is included
 
-1. All React functional components
+1. React stateless functional components
 2. Customisable color theme
 3. SASS files for all components
 4. Material icons support
@@ -19,7 +19,7 @@ Documentation - https://rmdort.gitlab.io/react-kitt/
 3. [Button Group](#buttongroup)
 4. [Cards](#card)
 5. [Dropdown and popovers](#dropdown)
-6. [Flex based grid][#row]
+6. [Flex based grid](#row)
 7. [Icon (material icons)](#icon)
 8. [Icon buttons](#iconbutton)
 9. [Menu](#menu)
