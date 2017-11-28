@@ -2,7 +2,8 @@
 
 Super lightweight React User Inteface components to help you get started. All components are very easy to customize using `sass`. You can also extends `react-kitt` to create own components for your brand.
 
-Documentation - https://rmdort.github.io/react-kitt/
+* Github - https://github.com/rmdort/react-kitt
+* Documentation - https://rmdort.github.io/react-kitt/
 
 ### What is included
 
