@@ -2,7 +2,7 @@
 
 Super lightweight React User Inteface components to help you get started. All components are very easy to customize using `sass`. You can also extends `react-kitt` to create own components for your brand.
 
-Documentation - https://rmdort.gitlab.io/react-kitt/
+Documentation - https://rmdort.github.io/react-kitt/
 
 ### What is included
 
@@ -13,22 +13,22 @@ Documentation - https://rmdort.gitlab.io/react-kitt/
 5. MIT License
 
 ### List of components
-1. [Alert](#alert)
-2. [Button](#button)
-3. [Button Group](#buttongroup)
-4. [Cards](#card)
-5. [Dropdown and popovers](#dropdown)
-6. [Flex based grid](#row)
-7. [Icon (material icons)](#icon)
-8. [Icon buttons](#iconbutton)
-9. [Menu](#menu)
-10. [Highly customisable Modal dialog](#modal)
-11. [Pagination](#pagination)
-12. [Pills](#pill)
-13. [Progress bars](#progress)
-14. [Tabs, accordion and toggles](#tab)
-15. [Toggle](#toggle)
-16. [Tooltip](#tooltip)
+1. [Alert](https://rmdort.github.io/react-kitt/#alert)
+2. [Button](https://rmdort.github.io/react-kitt/#button)
+3. [Button Group](https://rmdort.github.io/react-kitt/#buttongroup)
+4. [Cards](https://rmdort.github.io/react-kitt/#card)
+5. [Dropdown and popovers](https://rmdort.github.io/react-kitt/#dropdown)
+6. [Flex based grid](https://rmdort.github.io/react-kitt/#row)
+7. [Icon (material icons)](https://rmdort.github.io/react-kitt/#icon)
+8. [Icon buttons](https://rmdort.github.io/react-kitt/#iconbutton)
+9. [Menu](https://rmdort.github.io/react-kitt/#menu)
+10. [Highly customisable Modal dialog](https://rmdort.github.io/react-kitt/#modal)
+11. [Pagination](https://rmdort.github.io/react-kitt/#pagination)
+12. [Pills](https://rmdort.github.io/react-kitt/#pill)
+13. [Progress bars](https://rmdort.github.io/react-kitt/#progress)
+14. [Tabs, accordion and toggles](https://rmdort.github.io/react-kitt/#tab)
+15. [Toggle](https://rmdort.github.io/react-kitt/#toggle)
+16. [Tooltip](https://rmdort.github.io/react-kitt/#tooltip)
 
 ## How to use
 
