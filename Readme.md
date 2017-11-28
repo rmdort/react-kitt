@@ -2,6 +2,9 @@
 
 Super lightweight React User Inteface components to help you get started. All components are very easy to customize using `sass`. You can also extends `react-kitt` to create own components for your brand.
 
+Completely compatible with [Tailwind CSS](https://tailwindcss.com/) and Post CSS
+
+
 * Github - https://github.com/rmdort/react-kitt
 * Documentation - https://rmdort.github.io/react-kitt/
 
@@ -46,6 +49,15 @@ npm install react-kit --save
 ### Include react-kitt styles
 ```md
 import 'react-kitt/lib/styles/main.scss'
+```
+
+### Enable TailWind CSS
+
+You can enable [Tailwind CSS](https://tailwindcss.com/) in `styles/main.scss` by uncommenting 
+
+```
+@tailwind preflight;
+@tailwind utilities;
 ```
 
 ### Import components from react-kitt
