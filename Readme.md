@@ -23,7 +23,7 @@ Super lightweight React User Inteface components to help you get started. All co
 7. [Icon (material icons)](https://rmdort.github.io/react-kitt/#icon)
 8. [Icon buttons](https://rmdort.github.io/react-kitt/#iconbutton)
 9. [Menu](https://rmdort.github.io/react-kitt/#menu)
-10. [Highly customisable Modal dialog](https://rmdort.github.io/react-kitt/#modal)
+10. [Modal dialogs](https://rmdort.github.io/react-kitt/#modal)
 11. [Pagination](https://rmdort.github.io/react-kitt/#pagination)
 12. [Pills](https://rmdort.github.io/react-kitt/#pill)
 13. [Progress bars](https://rmdort.github.io/react-kitt/#progress)
