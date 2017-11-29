@@ -9,7 +9,7 @@ import Button from './../Button'
 /**
  * Buttons trigger actions when clicked
  */
-function IconButton (props) {
+function IconButton(props) {
   let { name, className, ...rest } = props
   let classes = cx(className, iconButtonClassName)
   return (
@@ -22,12 +22,12 @@ function IconButton (props) {
 IconButton.propTypes = {
   /* Name of the icon */
   name: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
 }
 
 IconButton.defaultProps = {
   name: null,
-  className: null
+  className: null,
 }
 
 export { IconButton }

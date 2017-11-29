@@ -1,3 +1,3 @@
-export function getElevationClassName (zIndex = 0) {
+export function getElevationClassName(zIndex = 0) {
   return `o-elevation-${zIndex}`
 }

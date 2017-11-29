@@ -7,13 +7,10 @@ import './style.scss'
 /**
  * Button groups arrange multiple buttons in a horizontal or vertical group.
  */
-function ButtonGroup ({ children, className, ...rest }) {
+function ButtonGroup({ children, className, ...rest }) {
   const classes = cx(buttonGroupClassName, className)
   return (
-    <div
-      className={classes}
-      {...rest}
-    >
+    <div className={classes} {...rest}>
       {children}
     </div>
   )
@@ -23,7 +20,7 @@ ButtonGroup.propTypes = {
   /**
    * Classname of the button group
    */
-  className: PropTypes.string
+  className: PropTypes.string,
 }
 
 export { ButtonGroup }

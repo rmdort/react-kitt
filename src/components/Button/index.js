@@ -7,27 +7,44 @@ import { buttonClassName } from './../../settings'
 /**
  * Buttons trigger actions when clicked
  */
-function Button (props) {
-  let { label, href, type, size, children, className, primary, secondary, outline, flat, ...rest } = props
+function Button(props) {
+  let {
+    label,
+    href,
+    type,
+    size,
+    children,
+    className,
+    primary,
+    secondary,
+    outline,
+    flat,
+    ...rest
+  } = props
   /* Add className */
-  const classes = cx(buttonClassName, {
-    [`${buttonClassName}-primary`]: primary,
-    [`${buttonClassName}-secondary`]: secondary,
-    [`${buttonClassName}-outline`]: outline,
-    [`${buttonClassName}-flat`]: flat,
-    [`${buttonClassName}-${type}`]: type
-  }, `${buttonClassName}-${size}`, className)
+  const classes = cx(
+    buttonClassName,
+    {
+      [`${buttonClassName}-primary`]: primary,
+      [`${buttonClassName}-secondary`]: secondary,
+      [`${buttonClassName}-outline`]: outline,
+      [`${buttonClassName}-flat`]: flat,
+      [`${buttonClassName}-${type}`]: type,
+    },
+    `${buttonClassName}-${size}`,
+    className
+  )
 
-  const tagName = href
-    ? 'a'
-    : 'button'
+  const tagName = href ? 'a' : 'button'
 
-  return (
-    React.createElement(tagName, {
+  return React.createElement(
+    tagName,
+    {
       className: classes,
       href,
-      ...rest
-    }, children || label)
+      ...rest,
+    },
+    children || label
   )
 }
 
@@ -42,7 +59,7 @@ Button.propTypes = {
   flat: PropTypes.bool,
   children: PropTypes.any,
   type: PropTypes.oneOf(['danger', 'success', 'info', 'warning']),
-  size: PropTypes.oneOf(['small', 'normal', 'large'])
+  size: PropTypes.oneOf(['small', 'normal', 'large']),
 }
 
 Button.defaultProps = {
@@ -51,7 +68,7 @@ Button.defaultProps = {
   outline: false,
   flat: false,
   size: 'normal',
-  type: null
+  type: null,
 }
 
 export { Button }

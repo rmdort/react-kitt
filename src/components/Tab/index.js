@@ -1,34 +1,57 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
-import { tabClassName, tabPanelsClassName, tabPanelClassName, tabLabelsClassName, tabLabelClassName, tabLabelActiveClassName, tabToggleClassName, tabDefaultClassName, tabShowOneClassName, tabPanelActiveClassName } from './../../settings'
+import {
+  tabClassName,
+  tabPanelsClassName,
+  tabPanelClassName,
+  tabLabelsClassName,
+  tabLabelClassName,
+  tabLabelActiveClassName,
+  tabToggleClassName,
+  tabDefaultClassName,
+  tabShowOneClassName,
+  tabPanelActiveClassName,
+} from './../../settings'
 import { withStateHandlers } from 'recompose'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import './style.scss'
 
-function Tab ({ className, children, activeTab, showOne, toggle, animation, animationTimeout, setActiveTab }) {
-  const classes = cx(tabClassName, {
-    [`${tabToggleClassName}`]: toggle,
-    [`${tabDefaultClassName}`]: !toggle,
-    [`${tabShowOneClassName}`]: showOne
-  }, className)
+function Tab({
+  className,
+  children,
+  activeTab,
+  showOne,
+  toggle,
+  animation,
+  animationTimeout,
+  setActiveTab,
+}) {
+  const classes = cx(
+    tabClassName,
+    {
+      [`${tabToggleClassName}`]: toggle,
+      [`${tabDefaultClassName}`]: !toggle,
+      [`${tabShowOneClassName}`]: showOne,
+    },
+    className
+  )
   if (!Array.isArray(children)) {
     children = [children]
   }
   /* If animation is disabled reset animationTimeout */
   animationTimeout = !animation ? 0 : animationTimeout
   /* Tab labels */
-  const labels = children.map((child) => {
+  const labels = children.map(child => {
     return child.props.title
   })
-  function handleClick (tab) {
+  function handleClick(tab) {
     setActiveTab(tab, toggle, showOne)
   }
   return (
     <div className={classes}>
-      {toggle
-        ? null
-        : <nav className={tabLabelsClassName}>
+      {toggle ? null : (
+        <nav className={tabLabelsClassName}>
           {labels.map((label, index) => {
             let isActive = activeTab[0] === index
             return (
@@ -42,45 +65,41 @@ function Tab ({ className, children, activeTab, showOne, toggle, animation, anim
             )
           })}
         </nav>
-      }
+      )}
       <TransitionGroup className={tabPanelsClassName}>
-        {children
-          .map((child, index) => {
-            let isActive = toggle
-                ? activeTab.indexOf(index) !== -1
-                : index === activeTab[0]
-            let panelClass = cx(tabPanelClassName, {
-              [`${tabPanelActiveClassName}`]: isActive
-            })
-            return (
-              <div key={index} className={panelClass}>
-                {toggle
-                  ? <TabLabel
-                    label={labels[index]}
-                    index={index}
-                    onClick={handleClick}
-                    isActive={isActive}
-                    />
-                  : null
-                }
-                {animation
-                  ? <CSSTransition
-                    timeout={animationTimeout}
-                    classNames={animation || ''}
-                    unmountOnExit
-                    in={isActive}
-                    key={index}
-                    >
-                    {React.cloneElement(child, { handleClick })}
-                  </CSSTransition>
-                  : isActive
-                      ? child
-                      : null
-                }
-              </div>
-            )
+        {children.map((child, index) => {
+          let isActive = toggle
+            ? activeTab.indexOf(index) !== -1
+            : index === activeTab[0]
+          let panelClass = cx(tabPanelClassName, {
+            [`${tabPanelActiveClassName}`]: isActive,
           })
-        }
+          return (
+            <div key={index} className={panelClass}>
+              {toggle ? (
+                <TabLabel
+                  label={labels[index]}
+                  index={index}
+                  onClick={handleClick}
+                  isActive={isActive}
+                />
+              ) : null}
+              {animation ? (
+                <CSSTransition
+                  timeout={animationTimeout}
+                  classNames={animation || ''}
+                  unmountOnExit
+                  in={isActive}
+                  key={index}
+                >
+                  {React.cloneElement(child, { handleClick })}
+                </CSSTransition>
+              ) : isActive ? (
+                child
+              ) : null}
+            </div>
+          )
+        })}
       </TransitionGroup>
     </div>
   )
@@ -90,17 +109,14 @@ function Tab ({ className, children, activeTab, showOne, toggle, animation, anim
  * Tab Label
  */
 const TabLabel = ({ label, index, isActive, onClick }) => {
-  function handleClick () {
+  function handleClick() {
     onClick(index)
   }
   let className = cx(tabLabelClassName, {
-    [`${tabLabelActiveClassName}`]: isActive
+    [`${tabLabelActiveClassName}`]: isActive,
   })
   return (
-    <button
-      className={className}
-      onClick={handleClick}
-      >
+    <button className={className} onClick={handleClick}>
       {label}
     </button>
   )
@@ -114,7 +130,7 @@ Tab.defaultProps = {
   toggle: false,
   showOne: false,
   animation: false,
-  animationTimeout: 200
+  animationTimeout: 200,
 }
 
 /**
@@ -136,27 +152,25 @@ Tab.propTypes = {
   /**
    * Animation name - fade, slide or `false` to disable
    */
-  animation: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.bool
-  ]),
-  children: PropTypes.any
+  animation: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  children: PropTypes.any,
 }
 
 const TabWithState = withStateHandlers(
   {
-    activeTab: [0]
+    activeTab: [0],
   },
   {
     setActiveTab: ({ activeTab }) => (value, toggle, showOne) => {
       return {
-        activeTab: toggle && !showOne
-          ? activeTab.indexOf(value) !== -1
-            ? activeTab.filter((id) => id !== value)
-            : [...activeTab, value]
-          : [value]
+        activeTab:
+          toggle && !showOne
+            ? activeTab.indexOf(value) !== -1
+              ? activeTab.filter(id => id !== value)
+              : [...activeTab, value]
+            : [value],
       }
-    }
+    },
   }
 )(Tab)
 

@@ -2,32 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
 import './style.scss'
-import { cardClassName, cardBodyClassName, cardTitleClassName, cardFooterClassName } from './../../settings'
+import {
+  cardClassName,
+  cardBodyClassName,
+  cardTitleClassName,
+  cardFooterClassName,
+} from './../../settings'
 import { getElevationClassName } from './../../utils'
 
-function Card ({ className, children, title, footer, zIndex }) {
+function Card({ className, children, title, footer, zIndex }) {
   const classes = cx(cardClassName, getElevationClassName(zIndex), className)
   if (!title && !footer && !children) return null
   return (
     <div className={classes}>
-      {title
-        ? <div className={cardTitleClassName}>
-          {title}
-        </div>
-        : null
-      }
-      {children
-        ? <div className={cardBodyClassName}>
-          {children}
-        </div>
-        : null
-      }
-      {footer
-        ? <div className={cardFooterClassName}>
-          {footer}
-        </div>
-        : null
-      }
+      {title ? <div className={cardTitleClassName}>{title}</div> : null}
+      {children ? <div className={cardBodyClassName}>{children}</div> : null}
+      {footer ? <div className={cardFooterClassName}>{footer}</div> : null}
     </div>
   )
 }
@@ -41,7 +31,7 @@ Card.propTypes = {
    * Elevation of the card
    */
   zIndex: PropTypes.number,
-  children: PropTypes.any
+  children: PropTypes.any,
 }
 
 export { Card }

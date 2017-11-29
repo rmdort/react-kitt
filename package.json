@@ -1,6 +1,6 @@
 {
   "name": "react-kitt",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Super lightweight React User Inteface components",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "postpublish": "rimraf lib",
     "copy:scss": "gulp --gulpfile scripts/gulpfile.js",
     "lint": "eslint src",
-    "pages": "npm run docs:build && buildbranch gh-pages docs"
+    "pages": "npm run docs:build && buildbranch gh-pages docs",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,11 @@
   },
   "homepage": "https://github.com/rmdort/react-kitt",
   "pre-commit": [
-    "lint"
+    "prettier"
   ],
+  "prettier": {
+    "semi": false
+  },
   "keywords": [
     "react",
     "ui",
@@ -81,6 +85,7 @@
     "postcss-loader": "^2.0.9",
     "pre-commit": "^1.2.2",
     "precss": "^2.0.0",
+    "prettier": "1.8.2",
     "prop-types": "^15.6.0",
     "react-styleguidist": "^6.0.33",
     "rimraf": "^2.6.2",

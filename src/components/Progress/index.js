@@ -3,19 +3,15 @@ import PropTypes from 'prop-types'
 import ProgressBar from 'react-line-progress'
 import './style.scss'
 
-function Progress (props) {
-  return (
-    <ProgressBar
-      {...props}
-    />
-  )
+function Progress(props) {
+  return <ProgressBar {...props} />
 }
 
 Progress.defaultProps = {
   onTop: false,
   percent: 0,
   spinner: false,
-  autoIncrement: true
+  autoIncrement: true,
 }
 
 Progress.propTypes = {
@@ -23,7 +19,7 @@ Progress.propTypes = {
   percent: PropTypes.number.isRequired,
   onTop: PropTypes.bool,
   autoIncrement: PropTypes.bool,
-  spinner: PropTypes.oneOf([false, 'left', 'right'])
+  spinner: PropTypes.oneOf([false, 'left', 'right']),
 }
 
 export { Progress }
