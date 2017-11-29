@@ -1,5 +1,4 @@
-/* @tailwind preflight;
-@tailwind utilities; */
+/* @tailwind preflight; */
 @import "mixins";
 @import "variables";
 @import "base";
@@ -10,3 +9,4 @@
 @import "animation";
 @import "tooltip";
 @import "grid";
+/* @tailwind utilities; */
