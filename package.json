@@ -54,9 +54,9 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|svg|css|scss)$": "<rootDir>/tests/__mocks__/fileMock.js"
+      "\\.(jpg|jpeg|png|svg|css|scss)$": "<rootDir>/tests/fileMock.js"
     },
-    "setupTestFrameworkScriptFile": "<rootDir>/tests/__mocks__/setup.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setup.js"
   },
   "peerDependencies": {
     "react": "^16.1.1",
