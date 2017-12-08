@@ -8,6 +8,7 @@ import {
   alertCloseClassName,
 } from './../../settings'
 import { CSSTransition } from 'react-transition-group'
+import withToggle from './../../decorators/withToggle'
 import './style.scss'
 
 function Alert({
@@ -64,15 +65,7 @@ Alert.defaultProps = {
   children: null,
 }
 
-const AlertWithState = withStateHandlers(
-  props => ({
-    isOpen: props.isOpen,
-  }),
-  {
-    hide: ({ isOpen }) => () => ({ isOpen: false }),
-    open: ({ isOpen }) => () => ({ isOpen: true }),
-  }
-)(Alert)
+const AlertWithState = withToggle(Alert)
 
 export { AlertWithState as Alert }
 export default AlertWithState
