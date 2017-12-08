@@ -2,9 +2,7 @@ import { withStateHandlers } from 'recompose'
 
 const withToggle = WrappedComponent => {
   return withStateHandlers(
-    props => ({
-      isOpen: props.isOpen,
-    }),
+    ({ isOpen }) => ({ isOpen }),
     {
       toggle: ({ isOpen }) => value => ({ isOpen: !isOpen }),
       hide: ({ isOpen }) => value => ({ isOpen: false }),
