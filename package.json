@@ -15,7 +15,7 @@
     "pages": "npm run docs:build && buildbranch gh-pages docs",
     "prettier": "prettier --single-quote --trailing-comma es5 --write \"src/**/!(__tests__)/*.js\"",
     "test": "jest",
-    "test:watch": "yarn test -- --watch"
+    "test:watch": "yarn test -- --watchAll"
   },
   "repository": {
     "type": "git",
@@ -56,7 +56,12 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|svg|css|scss)$": "<rootDir>/tests/fileMock.js"
     },
-    "setupTestFrameworkScriptFile": "<rootDir>/tests/setup.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setup.js",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      
+      "**/src/components/Alert/**"
+    ]
   },
   "peerDependencies": {
     "react": "^16.1.1",
