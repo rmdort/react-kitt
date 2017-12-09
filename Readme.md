@@ -10,8 +10,8 @@ Completely compatible with [Tailwind CSS](https://tailwindcss.com/) and Post CSS
 
 [![npm package](https://img.shields.io/npm/v/react-kitt.svg)](https://www.npmjs.org/package/react-kitt)
 [![npm download](https://img.shields.io/npm/dm/react-kitt.svg)](https://www.npmjs.org/package/react-kitt)
-[![Travis](https://img.shields.io/travis/rmdort/react-kitt.svg)](https://img.shields.io/travis/rmdort/react-kitt.svg)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1320/badge)](https://bestpractices.coreinfrastructure.org/projects/1320)
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/rmdort/react-kitt)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1452/badge)](https://bestpractices.coreinfrastructure.org/projects/1452)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 [![PeerDependencies](https://img.shields.io/david/peer/rmdort/react-kitt.svg)](https://david-dm.org/rmdort/react-kitt#info=peerDependencies&view=list)
 [![Dependencies](https://img.shields.io/david/rmdort/react-kitt.svg)](https://david-dm.org/rmdort/react-kitt)
