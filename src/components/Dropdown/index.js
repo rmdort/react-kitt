@@ -14,6 +14,7 @@ import {
 import { CSSTransition } from 'react-transition-group'
 import './style.scss'
 import withKeydown from './../../decorators/withKeydown'
+import withToggle from './../../decorators/withToggle'
 
 function Dropdown({
   isOpen,
@@ -24,7 +25,7 @@ function Dropdown({
   hide,
   label,
   hAlign,
-  keyCode,
+  keyCode
 }) {
   const parentClassName = cx(ddClassName, {
     [`${ddActiveClassName}`]: isOpen,
@@ -74,22 +75,14 @@ Dropdown.defaultProps = {
 
 /* With state */
 const DropdownCompose = compose(
-  withStateHandlers(
-    {
-      isOpen: false,
-    },
-    {
-      toggle: ({ isOpen }) => event => ({ isOpen: !isOpen }),
-      hide: ({ isOpen }) => () => ({ isOpen: false }),
-    }
-  ),
+  withToggle,
   withHandlers({
     handleClickOutside: ({ hide }) => event => {
       hide()
     },
   }),
   withKeydown({ keyCode: 27 }),
-  onClickOutside
+  onClickOutside,
 )(Dropdown)
 
 export default DropdownCompose
