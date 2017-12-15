@@ -25,7 +25,7 @@ function Dropdown({
   hide,
   label,
   hAlign,
-  keyCode
+  keyCode,
 }) {
   const parentClassName = cx(ddClassName, {
     [`${ddActiveClassName}`]: isOpen,
@@ -82,7 +82,7 @@ const DropdownCompose = compose(
     },
   }),
   withKeydown({ keyCode: 27 }),
-  onClickOutside,
+  onClickOutside
 )(Dropdown)
 
 export default DropdownCompose
