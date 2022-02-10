@@ -98,7 +98,7 @@
     "eslint-plugin-react": "^7.5.1",
     "gulp": "^3.9.1",
     "jest": "^21.2.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^2.0.9",
     "pre-commit": "^1.2.2",
     "precss": "^2.0.0",
